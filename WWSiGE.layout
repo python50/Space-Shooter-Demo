@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include/astroid.h" open="0" top="0" tabpos="0">
+		<Cursor position="238" topLine="0" />
+	</File>
+	<File name="include/config_file.h" open="0" top="0" tabpos="0">
+		<Cursor position="238" topLine="0" />
+	</File>
+	<File name="include/controller.h" open="1" top="0" tabpos="7">
+		<Cursor position="656" topLine="0" />
+	</File>
+	<File name="include/display.h" open="0" top="0" tabpos="0">
+		<Cursor position="238" topLine="0" />
+	</File>
+	<File name="include/error.h" open="0" top="0" tabpos="4">
+		<Cursor position="238" topLine="0" />
+	</File>
+	<File name="include/game_engine.h" open="1" top="0" tabpos="1">
+		<Cursor position="766" topLine="21" />
+	</File>
+	<File name="include/game_math.h" open="0" top="0" tabpos="0">
+		<Cursor position="238" topLine="0" />
+	</File>
+	<File name="include/global.h" open="0" top="0" tabpos="0">
+		<Cursor position="238" topLine="0" />
+	</File>
+	<File name="include/main.h" open="0" top="0" tabpos="0">
+		<Cursor position="238" topLine="0" />
+	</File>
+	<File name="include/misc.h" open="0" top="0" tabpos="4">
+		<Cursor position="238" topLine="0" />
+	</File>
+	<File name="include/ship.h" open="1" top="0" tabpos="3">
+		<Cursor position="1059" topLine="1" />
+	</File>
+	<File name="include/shot.h" open="1" top="0" tabpos="6">
+		<Cursor position="591" topLine="0" />
+	</File>
+	<File name="include/viewer.h" open="0" top="0" tabpos="0">
+		<Cursor position="298" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="901" topLine="6" />
+	</File>
+	<File name="src/astroid.cpp" open="1" top="1" tabpos="8">
+		<Cursor position="922" topLine="7" />
+	</File>
+	<File name="src/config_file.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="298" topLine="0" />
+	</File>
+	<File name="src/controller.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="298" topLine="0" />
+	</File>
+	<File name="src/display.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="298" topLine="0" />
+	</File>
+	<File name="src/error.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="298" topLine="0" />
+	</File>
+	<File name="src/game_engine.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="3599" topLine="96" />
+	</File>
+	<File name="src/game_math.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="298" topLine="0" />
+	</File>
+	<File name="src/misc.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="298" topLine="0" />
+	</File>
+	<File name="src/ship.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="1689" topLine="48" />
+	</File>
+	<File name="src/shot.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="1002" topLine="23" />
+	</File>
+</CodeBlocks_layout_file>

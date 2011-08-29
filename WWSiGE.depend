@@ -1,0 +1,1348 @@
+# depslib dependency file v1.0
+1200921650 source:/home/jason/Files/Code/c++/WWSiGE/lua/lauxlib.c
+	<ctype.h>
+	<errno.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+
+1310578802 /home/jason/Files/Code/c++/WWSiGE/lua/lua.h
+	<stdarg.h>
+	<stddef.h>
+	"luaconf.h"
+
+1202747108 /home/jason/Files/Code/c++/WWSiGE/lua/luaconf.h
+	<limits.h>
+	<stddef.h>
+	<unistd.h>
+	<io.h>
+	<stdio.h>
+	<stdio.h>
+	<readline/readline.h>
+	<readline/history.h>
+	<assert.h>
+	<math.h>
+	<unistd.h>
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lauxlib.h
+	<stddef.h>
+	<stdio.h>
+	"lua.h"
+
+1203007582 source:/home/jason/Files/Code/c++/WWSiGE/lua/lbaselib.c
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lualib.h
+	"lua.h"
+
+1198855942 source:/home/jason/Files/Code/c++/WWSiGE/lua/lcode.c
+	<stdlib.h>
+	"lua.h"
+	"lcode.h"
+	"ldebug.h"
+	"ldo.h"
+	"lgc.h"
+	"llex.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+	"ltable.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lcode.h
+	"llex.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/llex.h
+	"lobject.h"
+	"lzio.h"
+
+1218029388 /home/jason/Files/Code/c++/WWSiGE/lua/lobject.h
+	<stdarg.h>
+	"llimits.h"
+	"lua.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/llimits.h
+	<limits.h>
+	<stddef.h>
+	"lua.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lzio.h
+	"lua.h"
+	"lmem.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lmem.h
+	<stddef.h>
+	"llimits.h"
+	"lua.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lopcodes.h
+	"llimits.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lparser.h
+	"llimits.h"
+	"lobject.h"
+	"lzio.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/ldebug.h
+	"lstate.h"
+
+1199373638 /home/jason/Files/Code/c++/WWSiGE/lua/lstate.h
+	"lua.h"
+	"lobject.h"
+	"ltm.h"
+	"lzio.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/ltm.h
+	"lobject.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/ldo.h
+	"lobject.h"
+	"lstate.h"
+	"lzio.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lgc.h
+	"lobject.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/ltable.h
+	"lobject.h"
+
+1200921080 source:/home/jason/Files/Code/c++/WWSiGE/lua/ldblib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1210265786 source:/home/jason/Files/Code/c++/WWSiGE/lua/ldebug.c
+	<stdarg.h>
+	<stddef.h>
+	<string.h>
+	"lua.h"
+	"lapi.h"
+	"lcode.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lvm.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lapi.h
+	"lobject.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lfunc.h
+	"lobject.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lstring.h
+	"lgc.h"
+	"lobject.h"
+	"lstate.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lvm.h
+	"ldo.h"
+	"lobject.h"
+	"ltm.h"
+
+1200695482 source:/home/jason/Files/Code/c++/WWSiGE/lua/ldo.c
+	<setjmp.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lundump.h"
+	"lvm.h"
+	"lzio.h"
+
+1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lundump.h
+	"lobject.h"
+	"lzio.h"
+
+1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/ldump.c
+	<stddef.h>
+	"lua.h"
+	"lobject.h"
+	"lstate.h"
+	"lundump.h"
+
+1198853922 source:/home/jason/Files/Code/c++/WWSiGE/lua/lfunc.c
+	<stddef.h>
+	"lua.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+
+1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lgc.c
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+
+1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/linit.c
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+
+1200678462 source:/home/jason/Files/Code/c++/WWSiGE/lua/liolib.c
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/llex.c
+	<ctype.h>
+	<locale.h>
+	<string.h>
+	"lua.h"
+	"ldo.h"
+	"llex.h"
+	"lobject.h"
+	"lparser.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"lzio.h"
+
+1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lmathlib.c
+	<stdlib.h>
+	<math.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lmem.c
+	<stddef.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+
+1218029368 source:/home/jason/Files/Code/c++/WWSiGE/lua/loadlib.c
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+	<dlfcn.h>
+	<windows.h>
+	<mach-o/dyld.h>
+
+1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lobject.c
+	<ctype.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"ldo.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"lvm.h"
+
+1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lopcodes.c
+	"lopcodes.h"
+
+1200674298 source:/home/jason/Files/Code/c++/WWSiGE/lua/loslib.c
+	<errno.h>
+	<locale.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1198855942 source:/home/jason/Files/Code/c++/WWSiGE/lua/lparser.c
+	<string.h>
+	"lua.h"
+	"lcode.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"llex.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+
+1199373638 source:/home/jason/Files/Code/c++/WWSiGE/lua/lstate.c
+	<stddef.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"llex.h"
+	"lmem.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+
+1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lstring.c
+	<string.h>
+	"lua.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+
+1215797240 source:/home/jason/Files/Code/c++/WWSiGE/lua/lstrlib.c
+	<ctype.h>
+	<stddef.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1198855942 source:/home/jason/Files/Code/c++/WWSiGE/lua/ltable.c
+	<math.h>
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"ltable.h"
+
+1203007618 source:/home/jason/Files/Code/c++/WWSiGE/lua/ltablib.c
+	<stddef.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/ltm.c
+	<string.h>
+	"lua.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+
+1207338700 source:/home/jason/Files/Code/c++/WWSiGE/lua/lundump.c
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstring.h"
+	"lundump.h"
+	"lzio.h"
+
+1198855942 source:/home/jason/Files/Code/c++/WWSiGE/lua/lvm.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lvm.h"
+
+1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lzio.c
+	<string.h>
+	"lua.h"
+	"llimits.h"
+	"lmem.h"
+	"lstate.h"
+	"lzio.h"
+
+1174868258 source:/home/jason/Files/Code/c++/WWSiGE/lua/print.c
+	<ctype.h>
+	<stdio.h>
+	"ldebug.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lundump.h"
+
+1313719049 source:/home/jason/Files/Code/c++/WWSiGE/main.cpp
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+	"config_file.h"
+	"error.h"
+	"misc.h"
+	"game_engine.h"
+	<stdlib.h>
+	<SDL_framerate.h>
+
+1215196878 source:/home/jason/Files/Code/c++/WWSiGE/lua/lapi.c
+	<assert.h>
+	<math.h>
+	<stdarg.h>
+	<string.h>
+	"lua.h"
+	"lapi.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lundump.h"
+	"lvm.h"
+
+1313782242 source:/home/jason/Files/Code/c++/WWSiGE/src/error.cpp
+	"error.h"
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+
+1313719556 /home/jason/Files/Code/c++/WWSiGE/include/error.h
+	<stdlib.h>
+	<iostream>
+
+1314388354 source:/home/jason/Files/Code/c++/WWSiGE/src/config_file.cpp
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+	"error.h"
+	"config_file.h"
+
+1313719556 /home/jason/Files/Code/c++/WWSiGE/include/config_file.h
+	<iostream>
+
+1313719557 /home/jason/Files/Code/c++/WWSiGE/include/misc.h
+	<sstream>
+
+1314651296 source:/home/jason/Files/Code/c++/WWSiGE/src/controller.cpp
+	"controller.h"
+
+1314659453 /home/jason/Files/Code/c++/WWSiGE/include/controller.h
+	<iostream>
+	"SDL.h"
+
+1313782241 source:/home/jason/Files/Code/c++/WWSiGE/src/display.cpp
+	"display.h"
+
+1313719556 /home/jason/Files/Code/c++/WWSiGE/include/display.h
+
+1311704236 source:/home/jason/Files/Code/c++/WWSiGE/src/engine.cpp
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+	"engine.h"
+
+1311704235 /home/jason/Files/Code/c++/WWSiGE/include/engine.h
+	<iostream>
+
+1313782242 source:/home/jason/Files/Code/c++/WWSiGE/src/viewer.cpp
+	"viewer.h"
+
+1313782241 /home/jason/Files/Code/c++/WWSiGE/include/viewer.h
+	"iostream"
+
+1314660234 /home/jason/Files/Code/c++/WWSiGE/include/game_engine.h
+	"SDL.h"
+	"viewer.h"
+	"controller.h"
+	"SDL_mixer.h"
+	"SDL_ttf.h"
+	"vector"
+
+1314660387 source:/home/jason/Files/Code/c++/WWSiGE/src/game_engine.cpp
+	"game_engine.h"
+	"SDL.h"
+	"SDL_ttf.h"
+	"SDL_image.h"
+	"SDL_mixer.h"
+	"error.h"
+	"math.h"
+	"game_math.h"
+	"main.h"
+	"ship.h"
+	"astroid.h"
+	"misc.h"
+	<stdlib.h>
+
+1301616952 /usr/include/SDL/SDL.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_config.h
+	"SDL_platform.h"
+	<stdarg.h>
+
+1301616952 /usr/include/SDL/SDL_platform.h
+
+1301616952 /usr/include/SDL/begin_code.h
+
+1301616952 /usr/include/SDL/close_code.h
+
+1301616952 /usr/include/SDL/SDL_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_endian.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_keysym.h
+
+1301616952 /usr/include/SDL/SDL_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1301616952 /usr/include/SDL/SDL_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301738089 /usr/include/SDL/SDL_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1313719557 /home/jason/Files/Code/c++/WWSiGE/include/global.h
+
+1292266893 /usr/include/SDL/SDL_mixer.h
+	"SDL_types.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1301616952 /usr/include/SDL/SDL_types.h
+	"SDL_stdinc.h"
+
+1300979479 /usr/include/SDL/SDL_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1313782242 source:/home/jason/Files/Code/c++/WWSiGE/src/game_math.cpp
+	"game_math.h"
+	"stdlib.h"
+	"time.h"
+
+1313719557 /home/jason/Files/Code/c++/WWSiGE/include/game_math.h
+
+1215196878 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lapi.c
+	<assert.h>
+	<math.h>
+	<stdarg.h>
+	<string.h>
+	"lua.h"
+	"lapi.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lundump.h"
+	"lvm.h"
+
+1310578802 /media/78DB-E39B/Code/c++/WWSiGE/lua/lua.h
+	<stdarg.h>
+	<stddef.h>
+	"luaconf.h"
+
+1202747108 /media/78DB-E39B/Code/c++/WWSiGE/lua/luaconf.h
+	<limits.h>
+	<stddef.h>
+	<unistd.h>
+	<io.h>
+	<stdio.h>
+	<stdio.h>
+	<readline/readline.h>
+	<readline/history.h>
+	<assert.h>
+	<math.h>
+	<unistd.h>
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lapi.h
+	"lobject.h"
+
+1218029388 /media/78DB-E39B/Code/c++/WWSiGE/lua/lobject.h
+	<stdarg.h>
+	"llimits.h"
+	"lua.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/llimits.h
+	<limits.h>
+	<stddef.h>
+	"lua.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/ldebug.h
+	"lstate.h"
+
+1199373638 /media/78DB-E39B/Code/c++/WWSiGE/lua/lstate.h
+	"lua.h"
+	"lobject.h"
+	"ltm.h"
+	"lzio.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/ltm.h
+	"lobject.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lzio.h
+	"lua.h"
+	"lmem.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lmem.h
+	<stddef.h>
+	"llimits.h"
+	"lua.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/ldo.h
+	"lobject.h"
+	"lstate.h"
+	"lzio.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lfunc.h
+	"lobject.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lgc.h
+	"lobject.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lstring.h
+	"lgc.h"
+	"lobject.h"
+	"lstate.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/ltable.h
+	"lobject.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lundump.h
+	"lobject.h"
+	"lzio.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lvm.h
+	"ldo.h"
+	"lobject.h"
+	"ltm.h"
+
+1200921650 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lauxlib.c
+	<ctype.h>
+	<errno.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lauxlib.h
+	<stddef.h>
+	<stdio.h>
+	"lua.h"
+
+1203007582 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lbaselib.c
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lualib.h
+	"lua.h"
+
+1198855942 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lcode.c
+	<stdlib.h>
+	"lua.h"
+	"lcode.h"
+	"ldebug.h"
+	"ldo.h"
+	"lgc.h"
+	"llex.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+	"ltable.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lcode.h
+	"llex.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/llex.h
+	"lobject.h"
+	"lzio.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lopcodes.h
+	"llimits.h"
+
+1198760544 /media/78DB-E39B/Code/c++/WWSiGE/lua/lparser.h
+	"llimits.h"
+	"lobject.h"
+	"lzio.h"
+
+1200921080 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/ldblib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1210265786 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/ldebug.c
+	<stdarg.h>
+	<stddef.h>
+	<string.h>
+	"lua.h"
+	"lapi.h"
+	"lcode.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lvm.h"
+
+1200695482 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/ldo.c
+	<setjmp.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lundump.h"
+	"lvm.h"
+	"lzio.h"
+
+1198760544 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/ldump.c
+	<stddef.h>
+	"lua.h"
+	"lobject.h"
+	"lstate.h"
+	"lundump.h"
+
+1198853922 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lfunc.c
+	<stddef.h>
+	"lua.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+
+1198760544 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lgc.c
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+
+1198760544 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/linit.c
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+
+1200678462 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/liolib.c
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1198760544 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/llex.c
+	<ctype.h>
+	<locale.h>
+	<string.h>
+	"lua.h"
+	"ldo.h"
+	"llex.h"
+	"lobject.h"
+	"lparser.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"lzio.h"
+
+1198760544 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lmathlib.c
+	<stdlib.h>
+	<math.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1198760544 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lmem.c
+	<stddef.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+
+1218029368 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/loadlib.c
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+	<dlfcn.h>
+	<windows.h>
+	<mach-o/dyld.h>
+
+1198760544 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lobject.c
+	<ctype.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"ldo.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"lvm.h"
+
+1198760544 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lopcodes.c
+	"lopcodes.h"
+
+1200674298 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/loslib.c
+	<errno.h>
+	<locale.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1198855942 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lparser.c
+	<string.h>
+	"lua.h"
+	"lcode.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"llex.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+
+1199373638 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lstate.c
+	<stddef.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"llex.h"
+	"lmem.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+
+1198760544 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lstring.c
+	<string.h>
+	"lua.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+
+1215797240 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lstrlib.c
+	<ctype.h>
+	<stddef.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1198855942 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/ltable.c
+	<math.h>
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"ltable.h"
+
+1203007618 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/ltablib.c
+	<stddef.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1198760544 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/ltm.c
+	<string.h>
+	"lua.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+
+1207338700 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lundump.c
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstring.h"
+	"lundump.h"
+	"lzio.h"
+
+1198855942 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lvm.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lvm.h"
+
+1198760544 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lzio.c
+	<string.h>
+	"lua.h"
+	"llimits.h"
+	"lmem.h"
+	"lstate.h"
+	"lzio.h"
+
+1174868258 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/print.c
+	<ctype.h>
+	<stdio.h>
+	"ldebug.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lundump.h"
+
+1311966548 source:/media/78DB-E39B/Code/c++/WWSiGE/main.cpp
+	"config_file.h"
+	"error.h"
+	"misc.h"
+	"game_engine.h"
+	<stdlib.h>
+
+1311179068 /media/78DB-E39B/Code/c++/WWSiGE/include/config_file.h
+	<iostream>
+
+1311194390 /media/78DB-E39B/Code/c++/WWSiGE/include/error.h
+	<stdlib.h>
+	<iostream>
+
+1311098870 /media/78DB-E39B/Code/c++/WWSiGE/include/misc.h
+	<sstream>
+
+1311966158 /media/78DB-E39B/Code/c++/WWSiGE/include/game_engine.h
+	"SDL.h"
+	"viewer.h"
+	"controller.h"
+	"SDL_mixer.h"
+	"vector"
+
+1311700278 /media/78DB-E39B/Code/c++/WWSiGE/include/viewer.h
+	"iostream"
+
+1311700678 /media/78DB-E39B/Code/c++/WWSiGE/include/controller.h
+	<iostream>
+
+1311194404 source:/media/78DB-E39B/Code/c++/WWSiGE/src/config_file.cpp
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+	"error.h"
+	"config_file.h"
+
+1311700640 source:/media/78DB-E39B/Code/c++/WWSiGE/src/controller.cpp
+	"controller.h"
+
+1311371786 source:/media/78DB-E39B/Code/c++/WWSiGE/src/display.cpp
+	"display.h"
+
+1311371786 /media/78DB-E39B/Code/c++/WWSiGE/include/display.h
+
+1311371742 source:/media/78DB-E39B/Code/c++/WWSiGE/src/error.cpp
+	"error.h"
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+
+1311967044 source:/media/78DB-E39B/Code/c++/WWSiGE/src/game_engine.cpp
+	"game_engine.h"
+	"SDL.h"
+	"SDL_ttf.h"
+	"SDL_image.h"
+	"SDL_mixer.h"
+	"error.h"
+	"math.h"
+	"game_math.h"
+	<stdlib.h>
+
+1311964716 /media/78DB-E39B/Code/c++/WWSiGE/include/game_math.h
+
+1311700642 source:/media/78DB-E39B/Code/c++/WWSiGE/src/viewer.cpp
+	"viewer.h"
+
+1314660456 source:/home/jason/Files/Code/c++/WWSiGE/src/ship.cpp
+	"ship.h"
+	"math.h"
+	"shot.h"
+	"collision.h"
+	"SDL_rotozoom.h"
+	<iostream>
+
+1314650315 /home/jason/Files/Code/c++/WWSiGE/include/ship.h
+	"SDL.h"
+	"SDL_mixer.h"
+	"SDL_image.h"
+	"SDL_ttf.h"
+	"SDL_net.h"
+	"game_engine.h"
+	"error.h"
+	<vector>
+	<SDL.h>
+
+1313719557 /home/jason/Files/Code/c++/WWSiGE/include/main.h
+	"SDL.h"
+	"SDL_mixer.h"
+	"SDL_image.h"
+	"SDL_ttf.h"
+	"SDL_net.h"
+	"controller.h"
+	"viewer.h"
+	"config_file.h"
+	"display.h"
+	"error.h"
+	"game_engine.h"
+	"game_math.h"
+	"global.h"
+	"misc.h"
+	"ship.h"
+	<iostream>
+
+1194030249 /usr/include/SDL/SDL_net.h
+	"SDL.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1287173824 /usr/include/SDL/SDL_framerate.h
+	"SDL.h"
+
+1287173824 /usr/include/SDL/SDL_imageFilter.h
+
+1287173824 /usr/include/SDL/SDL_rotozoom.h
+	<math.h>
+	"SDL.h"
+
+1287173824 /usr/include/SDL/SDL_gfxBlitFunc.h
+	<stdio.h>
+	<stdlib.h>
+	<SDL.h>
+	<SDL_video.h>
+
+1287173824 /usr/include/SDL/SDL_gfxPrimitives.h
+	<math.h>
+	"SDL.h"
+
+1287173824 /usr/include/SDL/SDL_gfxPrimitives_font.h
+
+1314660191 source:/home/jason/Files/Code/c++/WWSiGE/src/astroid.cpp
+	"astroid.h"
+	"error.h"
+	"SDL_rotozoom.h"
+	"game_math.h"
+	"misc.h"
+
+1314615379 /home/jason/Files/Code/c++/WWSiGE/include/astroid.h
+	"game_engine.h"
+
+1313010972 source:/home/jason/Files/Code/c++/WWSiGE/src/ship_view.cpp
+	"ship_view.h"
+
+1312856340 /home/jason/Files/Code/c++/WWSiGE/include/ship_view.h
+	<viewer.h>
+
+1313782242 source:/home/jason/Files/Code/c++/WWSiGE/src/misc.cpp
+	"misc.h"
+
+1314659469 source:/home/jason/Files/Code/c++/WWSiGE/src/shot.cpp
+	"shot.h"
+	"math.h"
+	"SDL_rotozoom.h"
+	<iostream>
+	"collision.h"
+
+1314650502 /home/jason/Files/Code/c++/WWSiGE/include/shot.h
+	"SDL.h"
+	"SDL_mixer.h"
+	"SDL_image.h"
+	"SDL_ttf.h"
+	"SDL_net.h"
+	"game_engine.h"
+	"error.h"
+	<SDL.h>
+
+1314659047 source:/home/jason/Files/Code/c++/WWSiGE/src/collision.cpp
+	"game_engine.h"
+	"controller.h"
+	"math.h"
+
+1314658453 /home/jason/Files/Code/c++/WWSiGE/include/collision.h
+	"game_engine.h"
+	"controller.h"
+

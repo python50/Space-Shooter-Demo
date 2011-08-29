@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="WWSiGE" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/WWSiGE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/WWSiGE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`sdl-config --cflags`" />
+			<Add directory="lua" />
+			<Add directory="src" />
+			<Add directory="include" />
+			<Add directory="/usr/include/SDL" />
+		</Compiler>
+		<Linker>
+			<Add option="-lSDL_image" />
+			<Add option="-lSDL_ttf" />
+			<Add option="-lSDL_mixer" />
+			<Add option="-lSDL_gfx" />
+			<Add option="`sdl-config --libs`" />
+		</Linker>
+		<Unit filename="include/astroid.h" />
+		<Unit filename="include/config_file.h" />
+		<Unit filename="include/controller.h" />
+		<Unit filename="include/display.h" />
+		<Unit filename="include/error.h" />
+		<Unit filename="include/game_engine.h" />
+		<Unit filename="include/game_math.h" />
+		<Unit filename="include/global.h" />
+		<Unit filename="include/main.h" />
+		<Unit filename="include/misc.h" />
+		<Unit filename="include/ship.h" />
+		<Unit filename="include/shot.h" />
+		<Unit filename="include/viewer.h" />
+		<Unit filename="lua/lapi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lapi.h" />
+		<Unit filename="lua/lauxlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lauxlib.h" />
+		<Unit filename="lua/lbaselib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lcode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lcode.h" />
+		<Unit filename="lua/ldblib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/ldebug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/ldebug.h" />
+		<Unit filename="lua/ldo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/ldo.h" />
+		<Unit filename="lua/ldump.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lfunc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lfunc.h" />
+		<Unit filename="lua/lgc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lgc.h" />
+		<Unit filename="lua/linit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/liolib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/llex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/llex.h" />
+		<Unit filename="lua/llimits.h" />
+		<Unit filename="lua/lmathlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lmem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lmem.h" />
+		<Unit filename="lua/loadlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lobject.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lobject.h" />
+		<Unit filename="lua/lopcodes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lopcodes.h" />
+		<Unit filename="lua/loslib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lparser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lparser.h" />
+		<Unit filename="lua/lstate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lstate.h" />
+		<Unit filename="lua/lstring.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lstring.h" />
+		<Unit filename="lua/lstrlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/ltable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/ltable.h" />
+		<Unit filename="lua/ltablib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/ltm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/ltm.h" />
+		<Unit filename="lua/lua.h" />
+		<Unit filename="lua/luaconf.h" />
+		<Unit filename="lua/lualib.h" />
+		<Unit filename="lua/lundump.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lundump.h" />
+		<Unit filename="lua/lvm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lvm.h" />
+		<Unit filename="lua/lzio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lua/lzio.h" />
+		<Unit filename="lua/print.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Unit filename="sdl_gfx/SDL_framerate.h" />
+		<Unit filename="sdl_gfx/SDL_gfxBlitFunc.h" />
+		<Unit filename="sdl_gfx/SDL_gfxPrimitives.h" />
+		<Unit filename="sdl_gfx/SDL_gfxPrimitives_font.h" />
+		<Unit filename="sdl_gfx/SDL_imageFilter.h" />
+		<Unit filename="sdl_gfx/SDL_rotozoom.h" />
+		<Unit filename="src/astroid.cpp" />
+		<Unit filename="src/config_file.cpp" />
+		<Unit filename="src/controller.cpp" />
+		<Unit filename="src/display.cpp" />
+		<Unit filename="src/error.cpp" />
+		<Unit filename="src/game_engine.cpp" />
+		<Unit filename="src/game_math.cpp" />
+		<Unit filename="src/misc.cpp" />
+		<Unit filename="src/ship.cpp" />
+		<Unit filename="src/shot.cpp" />
+		<Unit filename="src/viewer.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
