@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="include/astroid.h" open="0" top="0" tabpos="0">
-		<Cursor position="238" topLine="0" />
+	<File name="include/astroid.h" open="1" top="0" tabpos="10">
+		<Cursor position="566" topLine="0" />
 	</File>
 	<File name="include/config_file.h" open="0" top="0" tabpos="0">
 		<Cursor position="238" topLine="0" />
 	</File>
-	<File name="include/controller.h" open="1" top="0" tabpos="7">
-		<Cursor position="656" topLine="0" />
+	<File name="include/controller.h" open="1" top="0" tabpos="8">
+		<Cursor position="836" topLine="0" />
 	</File>
 	<File name="include/display.h" open="0" top="0" tabpos="0">
 		<Cursor position="238" topLine="0" />
@@ -16,8 +16,8 @@
 	<File name="include/error.h" open="0" top="0" tabpos="4">
 		<Cursor position="238" topLine="0" />
 	</File>
-	<File name="include/game_engine.h" open="1" top="0" tabpos="1">
-		<Cursor position="766" topLine="21" />
+	<File name="include/game_engine.h" open="1" top="0" tabpos="2">
+		<Cursor position="1543" topLine="88" />
 	</File>
 	<File name="include/game_math.h" open="0" top="0" tabpos="0">
 		<Cursor position="238" topLine="0" />
@@ -31,26 +31,35 @@
 	<File name="include/misc.h" open="0" top="0" tabpos="4">
 		<Cursor position="238" topLine="0" />
 	</File>
-	<File name="include/ship.h" open="1" top="0" tabpos="3">
-		<Cursor position="1059" topLine="1" />
+	<File name="include/ship.h" open="1" top="0" tabpos="4">
+		<Cursor position="606" topLine="2" />
 	</File>
-	<File name="include/shot.h" open="1" top="0" tabpos="6">
-		<Cursor position="591" topLine="0" />
+	<File name="include/shot.h" open="1" top="0" tabpos="7">
+		<Cursor position="728" topLine="0" />
+	</File>
+	<File name="include/tile.h" open="1" top="0" tabpos="11">
+		<Cursor position="54" topLine="0" />
 	</File>
 	<File name="include/viewer.h" open="0" top="0" tabpos="0">
 		<Cursor position="298" topLine="0" />
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="9">
-		<Cursor position="901" topLine="6" />
+	<File name="lua/loslib.c" open="0" top="0" tabpos="13">
+		<Cursor position="923" topLine="36" />
 	</File>
-	<File name="src/astroid.cpp" open="1" top="1" tabpos="8">
-		<Cursor position="922" topLine="7" />
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="634" topLine="6" />
+	</File>
+	<File name="src/astroid.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="477" topLine="10" />
+	</File>
+	<File name="src/collision.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="2155" topLine="30" />
 	</File>
 	<File name="src/config_file.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="298" topLine="0" />
 	</File>
-	<File name="src/controller.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="298" topLine="0" />
+	<File name="src/controller.cpp" open="0" top="0" tabpos="12">
+		<Cursor position="634" topLine="4" />
 	</File>
 	<File name="src/display.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="298" topLine="0" />
@@ -58,8 +67,8 @@
 	<File name="src/error.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="298" topLine="0" />
 	</File>
-	<File name="src/game_engine.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="3599" topLine="96" />
+	<File name="src/game_engine.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="12485" topLine="496" />
 	</File>
 	<File name="src/game_math.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="298" topLine="0" />
@@ -67,10 +76,13 @@
 	<File name="src/misc.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="298" topLine="0" />
 	</File>
-	<File name="src/ship.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="1689" topLine="48" />
+	<File name="src/ship.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="2276" topLine="73" />
 	</File>
-	<File name="src/shot.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="1002" topLine="23" />
+	<File name="src/shot.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="1608" topLine="49" />
+	</File>
+	<File name="src/tile.cpp" open="1" top="0" tabpos="12">
+		<Cursor position="306" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

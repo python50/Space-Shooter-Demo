@@ -13,15 +13,14 @@
 #include "SDL_rotozoom.h"
 #include <iostream>
 
-ship::ship(game_engine * g_engine)
+ship::ship(game_engine * g_engine,float xx, float yy)
 {
     id_type="player";
 
     gm_engine=g_engine;
     new error(INFO_LOW,"Ship Created");
-
-    x=160;
-    y=140;
+    x=xx;
+    y=yy;
     direction=1;
     image_angle=0;
     speed=0;
@@ -31,6 +30,7 @@ ship::ship(game_engine * g_engine)
     shot_counter=0;
 
     delete_this=0;
+    no_collide=0;
 
     sprites.push_back(gm_engine->get_surface("ship0_0.png"));
     sprites.push_back(gm_engine->get_surface("ship0_1.png"));
@@ -40,14 +40,27 @@ ship::ship(game_engine * g_engine)
     sprites.push_back(gm_engine->get_surface("ship0_5.png"));
     sprites.push_back(gm_engine->get_surface("ship0_6.png"));
     sprites.push_back(gm_engine->get_surface("ship0_7.png"));
+    sprites.push_back(gm_engine->get_surface("ship0_8.png"));
+    sprites.push_back(gm_engine->get_surface("ship0_9.png"));
+    sprites.push_back(gm_engine->get_surface("ship0_10.png"));
+    sprites.push_back(gm_engine->get_surface("ship0_11.png"));
+    sprites.push_back(gm_engine->get_surface("ship0_12.png"));
+    sprites.push_back(gm_engine->get_surface("ship0_13.png"));
+    sprites.push_back(gm_engine->get_surface("ship0_14.png"));
+    sprites.push_back(gm_engine->get_surface("ship0_15.png"));
+
+    SDL_Surface * tmpsurf=sprites.at(0);
+
+    rect.w=sprites.at(0)->w;//round((tmpsurf->w)*(view::width/view::target_width));
+    rect.h=sprites.at(0)->h;//round((tmpsurf->h)*(view::height/view::target_height));
 }
 
-void * ship::call(std::string item, void * value_1=NULL, void * value_2=NULL)
+void ship::call(std::string item, void * value_1=NULL, void * value_2=NULL)
 {
 
 }
 
-void * ship::get(std::string item)
+void ship::get(std::string item, void * return_value)
 {
 
 }
@@ -62,7 +75,7 @@ void ship::update()
     Uint8 *keystate = SDL_GetKeyState(NULL);
 
     if ( keystate[SDLK_UP] )
-        speed+=.15;
+        speed+=play_area::scale*.15;
     if ( keystate[SDLK_LEFT] )
         direction+=10;
     if ( keystate[SDLK_RIGHT] )
@@ -71,70 +84,91 @@ void ship::update()
     if ( keystate[SDLK_SPACE] )
     {
         shot_counter++;
-        if (shot_counter > 20)
+        if (shot_counter > 1)
         {
-            resources::control.push_back(new shot(gm_engine, x, y, round(direction/45)*45 )); //direction based off of var image_number below
+            float tmpx,tmpy;
+            //tmpx=x+(cos(round((direction/22.5)*22.5)*3.14/180)*(rect.w/2)); // ugly, sure ! does it work, well kind of ...
+            //tmpy=y-(sin(round((direction/22.5)*22.5)*3.14/180)*(rect.h/2)); // it needs improvemnt
+            resources::control.push_back(new shot(gm_engine, x+(rect.w/2), y+(rect.h/2), round(direction/22.5)*22.5 )); //direction based off of var image_number below
+            resources::control.push_back(new shot(gm_engine, x+(rect.w/2), y+(rect.h/2), round(direction/22.5)*22.5+180 )); //direction based off of var image_number below
+            resources::control.push_back(new shot(gm_engine, x+(rect.w/2), y+(rect.h/2), round(direction/22.5)*22.5+90 )); //direction based off of var image_number below
+            resources::control.push_back(new shot(gm_engine, x+(rect.w/2), y+(rect.h/2), round(direction/22.5)*22.5+270 )); //direction based off of var image_number below
+
             shot_counter=0;
         }
     }
 
-    //void * result;
-    controller * self=this;
+    physics();
 
     rect.x=x;
     rect.y=y;
-    rect.w=16;
-    rect.h=16;
-/*    SDL_Rect rect_;
-    rect_.x=0;
-    rect_.y=0;
-    rect_.w=1;
-    rect_.h=1;*/
 
-    //controller * ctrl = rect_collide_all(rect,self,0);
+    controller * self=this;
+    controller * ctrl = rect_collide_all(rect,this,0);
 
-    if (!rect_collide_all(rect,self,0)==NULL)
+    if (!ctrl==NULL)
     {
-        speed=0;
+        //speed=0;
+        //delete_this=1;
+        std::cout << ctrl->id_type << "\n";
     }
 
+    view::x=(rect.x+(rect.w/2))-(view::width/2);
+    view::y=(rect.y+(rect.h/2))-(view::height/2);
 
-    physics();
+    if (view::x < 0)
+        view::x=0;
 
-    int image_number=round((direction/360)*8);
-    if (image_number > 7)
+    if (view::y < 0)
+        view::y=0;
+
+    if (view::x+(view::target_width) > play_area::scale_width)
+        view::x=play_area::scale_width-view::target_width;
+
+    if (view::y+(view::target_height) > play_area::scale_height)
+        view::y=play_area::height-view::target_height;
+
+
+    int image_number=round((direction/360)*16);
+    if (image_number > 15)
         image_number=0;
 
     SDL_Surface * surf=sprites.at(image_number);
 
-    gm_engine->blit(x+round(image_offset),y+round(image_offset),surf,0);
+    //SDL_Surface * rects=SDL_CreateRGBSurface(SDL_SWSURFACE,rect.w,rect.h,8,128,64,128,128);
+
+   //gm_engine->blit((rect.x-(rect.w/2))-image_offset,(rect.y-(rect.h/2))-image_offset,surf,0);
+   gm_engine->blit(rect.x,rect.y,surf,0);
+   //gm_engine->blit(rect.x,rect.y,rects,0);
 }
 
 void ship::physics()
 {
-    if (speed > 3)
-        speed=3;
+    if (speed > play_area::scale*3)
+        speed=play_area::scale*3; //3 is the speed constant
+
     if (speed > 0)
-        speed-=friction;
+        speed-=play_area::scale*friction;
     else
         speed=0;
+
     //wraping
     if (direction > 360)
         direction=0;
     if (direction < 0)
         direction=360;
 
-    if (x > 640)
+    if (x > play_area::scale_width)
         x=0;
-    if (y > 480)
+    if (y > play_area::scale_height)
         y=0;
 
     if (x < 0)
-        x=640;
+        x=play_area::scale_width;
     if (y < 0)
-        y=480;
+        y=play_area::scale_height;
 
-    int tmp_direction=round(direction/45)*45;
+    int tmp_direction=round(direction/22.5)*22.5;
     x=x+(cos(tmp_direction*3.14/180)*speed);
     y=y-(sin(tmp_direction*3.14/180)*speed);
 }

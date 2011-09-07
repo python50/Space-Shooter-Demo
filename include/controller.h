@@ -17,12 +17,15 @@ class controller
 {
     public:
         controller();
-        virtual void * call(std::string item, void * value_1=NULL, void * value_2=NULL);
-        virtual void * get(std::string item);
+        virtual void call(std::string item, void * value_1=NULL, void * return_value=NULL);
+        virtual void get(std::string item, void * return_value=NULL);
+        virtual void get(std::string item, int * return_value=NULL);
+        virtual void get(std::string item, float &return_value);
         virtual void   set(std::string item, void * value);
         virtual void   update();//game_engine &engine);
         virtual ~controller();
         bool delete_this;
+        bool no_collide;
         SDL_Rect rect;
         std::string id_type;
     protected:

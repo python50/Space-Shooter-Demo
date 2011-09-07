@@ -15,9 +15,9 @@ class astroid : public controller
 {
     public:
         astroid(game_engine * engine);
-        virtual void * call(std::string item, void * value_1, void * value_2);
-        virtual void * get(std::string item);
-        virtual void   set(std::string item, void * value);
+        virtual void call(std::string item, void * value_1, void * value_2);
+        virtual void get(std::string item, float &return_value);
+        virtual void  set(std::string item, void * value);
         void update();
         void physics();
         virtual ~astroid();

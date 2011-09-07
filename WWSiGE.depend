@@ -416,7 +416,7 @@
 	"lopcodes.h"
 	"lundump.h"
 
-1313719049 source:/home/jason/Files/Code/c++/WWSiGE/main.cpp
+1314981944 source:/home/jason/Files/Code/c++/WWSiGE/main.cpp
 	"lua.h"
 	"lualib.h"
 	"lauxlib.h"
@@ -467,17 +467,17 @@
 1313719556 /home/jason/Files/Code/c++/WWSiGE/include/config_file.h
 	<iostream>
 
-1313719557 /home/jason/Files/Code/c++/WWSiGE/include/misc.h
+1313719556 /home/jason/Files/Code/c++/WWSiGE/include/misc.h
 	<sstream>
 
-1314651296 source:/home/jason/Files/Code/c++/WWSiGE/src/controller.cpp
+1314788358 source:/home/jason/Files/Code/c++/WWSiGE/src/controller.cpp
 	"controller.h"
 
-1314659453 /home/jason/Files/Code/c++/WWSiGE/include/controller.h
+1314992478 /home/jason/Files/Code/c++/WWSiGE/include/controller.h
 	<iostream>
 	"SDL.h"
 
-1313782241 source:/home/jason/Files/Code/c++/WWSiGE/src/display.cpp
+1313782240 source:/home/jason/Files/Code/c++/WWSiGE/src/display.cpp
 	"display.h"
 
 1313719556 /home/jason/Files/Code/c++/WWSiGE/include/display.h
@@ -494,10 +494,10 @@
 1313782242 source:/home/jason/Files/Code/c++/WWSiGE/src/viewer.cpp
 	"viewer.h"
 
-1313782241 /home/jason/Files/Code/c++/WWSiGE/include/viewer.h
+1313782240 /home/jason/Files/Code/c++/WWSiGE/include/viewer.h
 	"iostream"
 
-1314660234 /home/jason/Files/Code/c++/WWSiGE/include/game_engine.h
+1314920854 /home/jason/Files/Code/c++/WWSiGE/include/game_engine.h
 	"SDL.h"
 	"viewer.h"
 	"controller.h"
@@ -505,7 +505,7 @@
 	"SDL_ttf.h"
 	"vector"
 
-1314660387 source:/home/jason/Files/Code/c++/WWSiGE/src/game_engine.cpp
+1315072715 source:/home/jason/Files/Code/c++/WWSiGE/src/game_engine.cpp
 	"game_engine.h"
 	"SDL.h"
 	"SDL_ttf.h"
@@ -519,6 +519,8 @@
 	"astroid.h"
 	"misc.h"
 	<stdlib.h>
+	"SDL_rotozoom.h"
+	"tile.h"
 
 1301616952 /usr/include/SDL/SDL.h
 	"SDL_main.h"
@@ -705,7 +707,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1313719557 /home/jason/Files/Code/c++/WWSiGE/include/global.h
+1313719556 /home/jason/Files/Code/c++/WWSiGE/include/global.h
 
 1292266893 /usr/include/SDL/SDL_mixer.h
 	"SDL_types.h"
@@ -730,7 +732,7 @@
 	"stdlib.h"
 	"time.h"
 
-1313719557 /home/jason/Files/Code/c++/WWSiGE/include/game_math.h
+1313719556 /home/jason/Files/Code/c++/WWSiGE/include/game_math.h
 
 1215196878 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lapi.c
 	<assert.h>
@@ -1236,7 +1238,7 @@
 1311700642 source:/media/78DB-E39B/Code/c++/WWSiGE/src/viewer.cpp
 	"viewer.h"
 
-1314660456 source:/home/jason/Files/Code/c++/WWSiGE/src/ship.cpp
+1315073239 source:/home/jason/Files/Code/c++/WWSiGE/src/ship.cpp
 	"ship.h"
 	"math.h"
 	"shot.h"
@@ -1244,7 +1246,7 @@
 	"SDL_rotozoom.h"
 	<iostream>
 
-1314650315 /home/jason/Files/Code/c++/WWSiGE/include/ship.h
+1314982916 /home/jason/Files/Code/c++/WWSiGE/include/ship.h
 	"SDL.h"
 	"SDL_mixer.h"
 	"SDL_image.h"
@@ -1255,7 +1257,7 @@
 	<vector>
 	<SDL.h>
 
-1313719557 /home/jason/Files/Code/c++/WWSiGE/include/main.h
+1313719556 /home/jason/Files/Code/c++/WWSiGE/include/main.h
 	"SDL.h"
 	"SDL_mixer.h"
 	"SDL_image.h"
@@ -1301,14 +1303,15 @@
 
 1287173824 /usr/include/SDL/SDL_gfxPrimitives_font.h
 
-1314660191 source:/home/jason/Files/Code/c++/WWSiGE/src/astroid.cpp
+1314993150 source:/home/jason/Files/Code/c++/WWSiGE/src/astroid.cpp
 	"astroid.h"
 	"error.h"
 	"SDL_rotozoom.h"
 	"game_math.h"
 	"misc.h"
+	"collision.h"
 
-1314615379 /home/jason/Files/Code/c++/WWSiGE/include/astroid.h
+1314788348 /home/jason/Files/Code/c++/WWSiGE/include/astroid.h
 	"game_engine.h"
 
 1313010972 source:/home/jason/Files/Code/c++/WWSiGE/src/ship_view.cpp
@@ -1320,14 +1323,14 @@
 1313782242 source:/home/jason/Files/Code/c++/WWSiGE/src/misc.cpp
 	"misc.h"
 
-1314659469 source:/home/jason/Files/Code/c++/WWSiGE/src/shot.cpp
+1315073074 source:/home/jason/Files/Code/c++/WWSiGE/src/shot.cpp
 	"shot.h"
 	"math.h"
 	"SDL_rotozoom.h"
 	<iostream>
 	"collision.h"
 
-1314650502 /home/jason/Files/Code/c++/WWSiGE/include/shot.h
+1314787200 /home/jason/Files/Code/c++/WWSiGE/include/shot.h
 	"SDL.h"
 	"SDL_mixer.h"
 	"SDL_image.h"
@@ -1337,12 +1340,19 @@
 	"error.h"
 	<SDL.h>
 
-1314659047 source:/home/jason/Files/Code/c++/WWSiGE/src/collision.cpp
+1314992549 source:/home/jason/Files/Code/c++/WWSiGE/src/collision.cpp
 	"game_engine.h"
 	"controller.h"
 	"math.h"
 
-1314658453 /home/jason/Files/Code/c++/WWSiGE/include/collision.h
+1314658452 /home/jason/Files/Code/c++/WWSiGE/include/collision.h
 	"game_engine.h"
 	"controller.h"
+
+1314982602 /home/jason/Files/Code/c++/WWSiGE/include/tile.h
+	"game_engine.h"
+	<controller.h>
+
+1314992567 source:/home/jason/Files/Code/c++/WWSiGE/src/tile.cpp
+	"tile.h"
 

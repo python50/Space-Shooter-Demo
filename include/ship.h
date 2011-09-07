@@ -24,10 +24,10 @@
 class ship : public controller
 {
     public:
-        ship(game_engine * gm_engine);
-        virtual void * call(std::string item, void * value_1, void * value_2);
-        virtual void * get(std::string item);
-        virtual void   set(std::string item, void * value);
+        ship(game_engine * gm_engine,float x, float y);
+        virtual void call(std::string item, void * value_1, void * value_2);
+        virtual void get(std::string item, void * return_value);
+        virtual void set(std::string item, void * value);
         void update();
         void physics();
         virtual ~ship();

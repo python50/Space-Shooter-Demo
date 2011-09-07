@@ -11,39 +11,44 @@
 #include "SDL_rotozoom.h"
 #include "game_math.h"
 #include "misc.h"
-
+#include "collision.h"
 astroid::astroid(game_engine * engine)
 {
     new error(INFO_LOW,"Astroid Created");
 
     id_type="astroid";
 
-    x=gmath_random(0,6400)/10;
-    y=gmath_random(0,4800)/10;
+    x=gmath_random(0,play_area::scale_width*10)/10;
+    y=gmath_random(0,play_area::scale_height*10)/10;
     direction=gmath_random(0,3600)/10;
     image_angle=0;
-    speed=1+(gmath_random(0,40)/10);
+    speed=play_area::scale*(1+(gmath_random(0,40)/10));
     friction=0;
 
     delete_this=0;
-
-    rect.w=16;
-    rect.h=16;
+    no_collide=0;
 
     sprite=gm_engine->get_surface("astroid0.png");
+
+    rect.w=sprite->w;
+    rect.h=sprite->h;
 
     gm_engine=engine;
 }
 
 
-void * astroid::call(std::string item, void * value_1=NULL, void * value_2=NULL)
+void astroid::call(std::string item, void * value_1, void * return_value)
 {
 
 }
 
-void * astroid::get(std::string item)
+void astroid::get(std::string item, float  &return_value)
 {
-
+    if (item=="direction")
+    {
+        return_value=direction;
+        return;
+    }
 }
 
 void astroid::set(std::string item, void * value)
@@ -53,8 +58,26 @@ void astroid::set(std::string item, void * value)
 
 void astroid::update()
 {
-    rect.x=x-8;
-    rect.y=y-8;
+    rect.x=x-(rect.w/2);
+    rect.y=y-(rect.h/2);
+
+    void * self=this;
+    controller * ctrl = rect_collide_all(rect,this,0);
+    if (!ctrl==NULL)
+    {
+        if (ctrl->id_type=="astroid")
+        {
+            float pdir;
+            ctrl->get("direction",pdir);
+            if (pdir >= 180 && direction )
+                direction-=180;
+
+            if (direction < 0)
+                direction=360+direction;
+        }
+
+
+    }
 
     physics();
     //rotozoomSurface(gm_engine->get_surface("astroid0.png"), image_angle, 1, 0)
@@ -72,15 +95,15 @@ void astroid::physics()
     if (direction < 0)
         direction=360;
 
-    if (x > 640)//engine.get_map_width())
+    if (x > play_area::scale_width)//engine.get_map_width())
         x=0;
-    if (y > 480)//engine.get_map_height())
+    if (y > play_area::scale_height)//engine.get_map_height())
         y=0;
 
     if (x < 0)
-        x=639;//engine.get_map_width();
+        x=play_area::scale_width;//engine.get_map_width();
     if (y < 0)
-        y=479;//.get_map_height();
+        y=play_area::scale_height;//.get_map_height();
 
     x=x+(cos((float) direction*3.14/180)*speed);
     y=y-(sin((float) direction*3.14/180)*speed);

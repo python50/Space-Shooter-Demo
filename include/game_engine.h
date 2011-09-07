@@ -45,20 +45,41 @@ struct game_map
 
 };
 
+namespace view
+{
+    extern int x;
+    extern int y;
+    extern int scale_width;
+    extern int scale_height;
+    extern int width;
+    extern int height;
+    extern int target_width;
+    extern int target_height;
+}
+
+namespace play_area
+{
+    extern double scale;
+    extern int scale_width;
+    extern int scale_height;
+    extern int width;
+    extern int height;
+}
+
 namespace resources
 {
-        extern std::vector< ::controller*> control;
-        extern std::vector<std::string> control_id;
-        extern std::vector<viewer*> view;
-        extern std::vector<std::string> view_id;
-        extern std::vector<SDL_Surface*> surface;
-        extern std::vector<std::string> surface_id;
-        extern std::vector<Mix_Music*> music;
-        extern std::vector<std::string> music_id;
-        extern std::vector<Mix_Chunk*> sound;
-        extern std::vector<std::string> sound_id;
-        extern std::vector<TTF_Font*> font;
-        extern std::vector<std::string> font_id;
+    extern std::vector< ::controller*> control;
+    extern std::vector<std::string> control_id;
+    extern std::vector<viewer*> view;
+    extern std::vector<std::string> view_id;
+    extern std::vector<SDL_Surface*> surface;
+    extern std::vector<std::string> surface_id;
+    extern std::vector<Mix_Music*> music;
+    extern std::vector<std::string> music_id;
+    extern std::vector<Mix_Chunk*> sound;
+    extern std::vector<std::string> sound_id;
+    extern std::vector<TTF_Font*> font;
+    extern std::vector<std::string> font_id;
 }
 
 
@@ -105,7 +126,7 @@ class game_engine
         void * rect_collide_all(SDL_Rect rect,void * selfp,int number,void * ptr=NULL);
 
         bool update();
-        void blit( float x, float y, SDL_Surface* source, bool free=0);
+        void blit( float x, float y, SDL_Surface* source, bool free=0, bool no_move=0);
         bool event();
         virtual ~game_engine();
 

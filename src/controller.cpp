@@ -13,15 +13,26 @@ controller::controller()
     //ctor
 }
 
-void * controller::call(std::string item, void * value_1, void * value_2)
+void controller::call(std::string item, void * value_1, void * value_2)
 {
 
 }
 
-void * controller::get(std::string item)
+void controller::get(std::string item, void * val)
 {
-    return NULL;
+    return;
 }
+
+void controller::get(std::string item, int * val)
+{
+    return;
+}
+
+void controller::get(std::string item, float &val)
+{
+    return;
+}
+
 
 void controller::set(std::string item, void * value)
 {

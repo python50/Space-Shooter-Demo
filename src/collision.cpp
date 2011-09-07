@@ -52,24 +52,27 @@ controller * rect_collide_all(SDL_Rect rect,controller * selfp,int number)
 {
     number+=1;
     unsigned int occur=0;
-    unsigned int size = resources::control.size()-1;
+    unsigned int size = resources::control.size();
 
-    for(unsigned int i=0;i <= size;i+=1)
+    SDL_Rect r1= rect;
+    std::vector<controller*> a = resources::control;
+
+    for(unsigned int i=0;i < size;i+=1)
     {
+
         if ( rect_collide(rect, resources::control.at(i)->rect ) )
         {
 
+            SDL_Rect r2= resources::control.at(i)->rect;
+
             if ( resources::control.at(i)==selfp)
-                return NULL;
+                continue;
             else
             {
-                occur++;
+                if (resources::control.at(i)->no_collide)
+                    continue;
 
-                if (occur > number)
-                    break;
-
-                if (occur == number)
-                    return resources::control.at(i);
+                return resources::control.at(i);
             }
         }
 

@@ -28,7 +28,7 @@ int main()
 
     game_engine engine(320,240);
 
-    if (! engine.load(640,480,0,1))
+    if (! engine.load(320,240,0,0))
     {
         new error(FATAL_ERROR,"WWSiGE Failed To Load Necessary Resources, Quitting ...");
         return 100;

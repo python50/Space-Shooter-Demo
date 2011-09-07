@@ -22,22 +22,27 @@ shot::shot(game_engine * g_engine,float xx,float yy,float dir)
     x=xx;
     y=yy;
     direction=dir;
-    speed=6;
+    speed=play_area::scale*6;
 
     life_counter=0;
 
     delete_this=0;
+    no_collide=0;
 
     sprite=gm_engine->get_surface("shot0.png");
     gm_engine->play_sound("beep1");
+
+    rect.w=round(sprite->w * (view::width/view::target_width));
+    rect.h=round(sprite->h * (view::height/view::target_height));
+    std::cout << rect.x << " " << rect.y << " ; " << rect.w << " " << rect.h << "\n";
 }
 
-void * shot::call(std::string item, void * value_1, void * value_2)
+void shot::call(std::string item, void * value_1, void * value_2)
 {
 
 }
 
-void * shot::get(std::string item)
+void shot::get(std::string item, void * return_value)
 {
 
 }
@@ -50,10 +55,9 @@ void shot::set(std::string item, void * value)
 void shot::update()
 {
     life_counter++;
-    rect.x=x;
-    rect.y=y;
-    rect.w=2;
-    rect.h=2;
+
+    rect.x=x-(rect.w/2);
+    rect.y=y-(rect.h/2);
 
     void * self=this;
     controller * ctrl = rect_collide_all(rect,this,0);
@@ -61,30 +65,30 @@ void shot::update()
     {
         if (ctrl->id_type=="astroid")
         {
-            ctrl->delete_this=1;
+            ctrl->delete_this=true;
             delete_this=true;
         }
     }
 
     physics();
     gm_engine->blit(x,y,sprite,0);
-
-    if (life_counter > 60)
+//std::cout << rect.x << " " << rect.y << " ; " << rect.w << " " << rect.h << "\n";
+    if (life_counter > 600)
         delete_this=true;
 }
 
 void shot::physics()
 {
 
-    if (x > 640)
+    if (x > play_area::scale_width)
        x=0;
-    if (y > 480)
+    if (y > play_area::scale_height)
        y=0;
 
     if (x < 0)
-        x=640;
+        x=play_area::scale_width;
     if (y < 0)
-        y=480;
+        y=play_area::scale_height;
 
     x=x+(cos(direction*3.14/180)*speed);
     y=y-(sin(direction*3.14/180)*speed);

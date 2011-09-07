@@ -19,6 +19,31 @@
 #include "astroid.h"
 #include "misc.h"
 #include <stdlib.h>
+#include "SDL_rotozoom.h"
+#include "tile.h"
+
+
+namespace view
+{
+    int x=0;
+    int y=0;
+    int scale_width=0;
+    int scale_height=0;
+    int width=0;
+    int height=0;
+    int target_width=0;
+    int target_height=0;
+}
+
+namespace play_area
+{
+    double scale=0;
+    int scale_width=0;
+    int scale_height=0;
+    int width=0;
+    int height=0;
+}
+
 
 namespace resources
 {
@@ -48,6 +73,23 @@ bool game_engine::load(int width,int height,bool fullscreen, bool cursor)
 
     screen_width=width;
     screen_height=height;
+
+    view::x=0;
+    view::y=0;
+    view::width=width;
+    view::height=height;
+    view::target_width=320;
+    view::target_height=240;
+    view::scale_width=(view::width/view::target_width);
+    view::scale_height=(view::height/view::target_height);
+
+    play_area::scale=(double) (view::width/view::target_width);
+
+    play_area::width=640;
+    play_area::height=480;
+    play_area::scale_width=play_area::width*(view::width/view::target_width);
+    play_area::scale_height=play_area::height*(view::height/view::target_height);
+
 
     if ( SDL_Init( SDL_INIT_EVERYTHING) < 0 )
     {
@@ -111,14 +153,26 @@ bool game_engine::load(int width,int height,bool fullscreen, bool cursor)
 
     load_surface("data/ship0.png","ship0.png");
 
-    load_surface("data/ship0_0.png","ship0_0.png");
-    load_surface("data/ship0_1.png","ship0_1.png");
-    load_surface("data/ship0_2.png","ship0_2.png");
-    load_surface("data/ship0_3.png","ship0_3.png");
-    load_surface("data/ship0_4.png","ship0_4.png");
-    load_surface("data/ship0_5.png","ship0_5.png");
-    load_surface("data/ship0_6.png","ship0_6.png");
-    load_surface("data/ship0_7.png","ship0_7.png");
+    load_surface("data/ship0_0.png" ,"ship0_0.png");
+    load_surface("data/ship0_1.png" ,"ship0_1.png");
+    load_surface("data/ship0_2.png" ,"ship0_2.png");
+    load_surface("data/ship0_3.png" ,"ship0_3.png");
+    load_surface("data/ship0_4.png" ,"ship0_4.png");
+    load_surface("data/ship0_5.png" ,"ship0_5.png");
+    load_surface("data/ship0_6.png" ,"ship0_6.png");
+    load_surface("data/ship0_7.png" ,"ship0_7.png");
+    load_surface("data/ship0_8.png" ,"ship0_8.png");
+    load_surface("data/ship0_9.png" ,"ship0_9.png");
+    load_surface("data/ship0_10.png","ship0_10.png");
+    load_surface("data/ship0_11.png","ship0_11.png");
+    load_surface("data/ship0_12.png","ship0_12.png");
+    load_surface("data/ship0_13.png","ship0_13.png");
+    load_surface("data/ship0_14.png","ship0_14.png");
+    load_surface("data/ship0_15.png","ship0_15.png");
+
+    load_surface("data/tile0.png","tile0.png");
+    load_surface("data/starfield.png","starfield.png");
+    load_surface("data/filled.png","filled.png");
 
     load_surface("data/ship1.png","ship1.png");
     load_surface("data/shot0.png","shot0.png");
@@ -131,10 +185,19 @@ bool game_engine::load(int width,int height,bool fullscreen, bool cursor)
 
     //resources::control.push_back(new astroid(this));
 
-    resources::control.push_back(new ship(this));
+    for (int y=0;y < play_area::scale_height;y+=240)
+    {
+        for (int x=0;x < play_area::scale_width;x+=320)
+        {
+            resources::control.push_back(new tile(this,x,y,"starfield.png"));
+        }
+    }
+//gmath_random(,256)
 
-    for (int i=0;i < gmath_random(8,32);i++)
+    for (int i=0;i < 1024;i++)
         resources::control.push_back(new astroid(this));
+
+        resources::control.push_back(new ship(this,32,32));
 
     game_map tmp_map;
     tmp_map.width=width;
@@ -241,6 +304,8 @@ int game_engine::load_surface(std::string file, std::string id)
     //if (colorkey==1)
     //    surface.push_back(SDL_DisplayFormat(image));
     //else
+
+    image=zoomSurface(image, (double) view::width/view::target_width, (double) view::height/view::target_height, 0);
     resources::surface.push_back(SDL_DisplayFormatAlpha(image));
 
     resources::surface_id.push_back(id);
@@ -441,7 +506,7 @@ bool game_engine::update()
     if (event()==0)
         return 0;
 
-    SDL_FillRect(screen, 0, SDL_MapRGB(screen->format, 16, 16, 64));
+    SDL_FillRect(screen, 0, SDL_MapRGB(screen->format, 0, 0, 0));
 
     for (unsigned int i=0; i < resources::control.size(); i++)
     {
@@ -512,11 +577,20 @@ SDL_Surface * game_engine::render_text(std::string font, std::string texts, int 
     return resulting_text;
 }
 
-void game_engine::blit( float x, float y, SDL_Surface* source, bool free)
+void game_engine::blit( float x, float y, SDL_Surface* source, bool free, bool no_move)
 {
     SDL_Rect rect;
-    rect.x=round(x);
-    rect.y=round(y);
+    if (no_move)
+    {
+        rect.x=round(x);
+        rect.y=round(y);
+    }
+    else
+    {
+        rect.x=round(x)-view::x;
+        rect.y=round(y)-view::y;
+    }
+
     SDL_BlitSurface(source, 0, screen, &rect);
 
     if (free)

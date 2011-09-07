@@ -44,6 +44,7 @@
 			<Add option="`sdl-config --libs`" />
 		</Linker>
 		<Unit filename="include/astroid.h" />
+		<Unit filename="include/collision.h" />
 		<Unit filename="include/config_file.h" />
 		<Unit filename="include/controller.h" />
 		<Unit filename="include/display.h" />
@@ -55,6 +56,7 @@
 		<Unit filename="include/misc.h" />
 		<Unit filename="include/ship.h" />
 		<Unit filename="include/shot.h" />
+		<Unit filename="include/tile.h" />
 		<Unit filename="include/viewer.h" />
 		<Unit filename="lua/lapi.c">
 			<Option compilerVar="CC" />
@@ -177,6 +179,7 @@
 		<Unit filename="sdl_gfx/SDL_imageFilter.h" />
 		<Unit filename="sdl_gfx/SDL_rotozoom.h" />
 		<Unit filename="src/astroid.cpp" />
+		<Unit filename="src/collision.cpp" />
 		<Unit filename="src/config_file.cpp" />
 		<Unit filename="src/controller.cpp" />
 		<Unit filename="src/display.cpp" />
@@ -186,6 +189,7 @@
 		<Unit filename="src/misc.cpp" />
 		<Unit filename="src/ship.cpp" />
 		<Unit filename="src/shot.cpp" />
+		<Unit filename="src/tile.cpp" />
 		<Unit filename="src/viewer.cpp" />
 		<Extensions>
 			<code_completion />
