@@ -1,0 +1,9 @@
+==Space Shooter Demo==
+simple space demo for show/reference
+
+note, requires these libraries (the development versions):
+	libsdl
+	libsdl-image1.2
+	libsdl-mixer1.2
+	libsdl-ttf1.2
+	libsdl-gfx
