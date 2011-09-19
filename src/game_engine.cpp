@@ -6,6 +6,16 @@
  ** explicit authorization by the copyright holder: Jason White
  **/
 
+extern "C"
+{
+    #include "lua.h"
+    #include "lualib.h"
+    #include "lauxlib.h"
+}
+
+#include "algorithm"
+
+
 #include "game_engine.h"
 #include "SDL.h"
 #include "SDL_ttf.h"
@@ -16,12 +26,13 @@
 #include "game_math.h"
 #include "main.h"
 #include "ship.h"
+#include "hud.h"
 #include "astroid.h"
 #include "misc.h"
 #include <stdlib.h>
 #include "SDL_rotozoom.h"
 #include "tile.h"
-
+#include "lua_object.h"
 
 namespace view
 {
@@ -44,6 +55,18 @@ namespace play_area
     int height=0;
 }
 
+namespace game
+{
+    int lives=0;
+    bool pause=0;
+    bool reset=0;
+    bool over=0;
+}
+
+namespace global_lua
+{
+    lua_State * lua;
+}
 
 namespace resources
 {
@@ -87,8 +110,8 @@ bool game_engine::load(int width,int height,bool fullscreen, bool cursor)
 
     play_area::width=640;
     play_area::height=480;
-    play_area::scale_width=play_area::width*(view::width/view::target_width);
-    play_area::scale_height=play_area::height*(view::height/view::target_height);
+    play_area::scale_width=play_area::width*play_area::scale;//*(view::width/view::target_width);
+    play_area::scale_height=play_area::height*play_area::scale;//*(view::height/view::target_height);
 
 
     if ( SDL_Init( SDL_INIT_EVERYTHING) < 0 )
@@ -123,81 +146,74 @@ bool game_engine::load(int width,int height,bool fullscreen, bool cursor)
         return 0;
     }
 
+    //Mix_Volume(-1,0);;
+
     TTF_Init();
 
     SDL_ShowCursor(cursor);
 
-    load_music("data/song.ogg","a million fibers");
-    //play_music("a million fibers",-1);
+    load_sound("data/sound/beep0.ogg","beep0");
+    load_sound("data/sound/beep1.ogg","beep1");
+    load_sound("data/sound/beep1_short.ogg","beep1_short");
+    load_sound("data/sound/thud_0.ogg","thud_0");
 
-    load_sound("data/beep0.ogg","beep0");
-    load_sound("data/beep1.ogg","beep1");
-    load_sound("data/beep1_short.ogg","beep1_short");
-
-    load_sound("data/thud_0.ogg","thud_0");
-
-    //play_sound(0);
-
+    load_font("data/font/JuraMedium.ttf","jura_medium-24",scale_value(24));
+    load_font("data/font/JuraMedium.ttf","jura_medium-12",scale_value(14));
 
     gmath_randomize();
 
-    //if (Mix_SetMusicPosition(gmath_random(0,(60*60)))==-1)
-    //{
-    //    printf("Mix_SetMusicPosition: %s\n", Mix_GetError());
-    //}
+    load_surface("data/image/ship0.png","ship0.png");
 
-    //if (Mix_SetMusicPosition(gmath_random(0,(60*60)))==-1)
-    //{
-    //    printf("Mix_SetMusicPosition: %s\n", Mix_GetError());
-    //}
+    load_surface("data/image/ship0_0.png" ,"ship0_0.png");
+    load_surface("data/image/ship0_1.png" ,"ship0_1.png");
+    load_surface("data/image/ship0_2.png" ,"ship0_2.png");
+    load_surface("data/image/ship0_3.png" ,"ship0_3.png");
+    load_surface("data/image/ship0_4.png" ,"ship0_4.png");
+    load_surface("data/image/ship0_5.png" ,"ship0_5.png");
+    load_surface("data/image/ship0_6.png" ,"ship0_6.png");
+    load_surface("data/image/ship0_7.png" ,"ship0_7.png");
+    load_surface("data/image/ship0_8.png" ,"ship0_8.png");
+    load_surface("data/image/ship0_9.png" ,"ship0_9.png");
+    load_surface("data/image/ship0_10.png","ship0_10.png");
+    load_surface("data/image/ship0_11.png","ship0_11.png");
+    load_surface("data/image/ship0_12.png","ship0_12.png");
+    load_surface("data/image/ship0_13.png","ship0_13.png");
+    load_surface("data/image/ship0_14.png","ship0_14.png");
+    load_surface("data/image/ship0_15.png","ship0_15.png");
 
-    load_surface("data/ship0.png","ship0.png");
+    load_surface("data/image/tile0.png","tile0.png");
+    load_surface("data/image/starfield.png","starfield.png");
+    load_surface("data/image/filled.png","filled.png");
 
-    load_surface("data/ship0_0.png" ,"ship0_0.png");
-    load_surface("data/ship0_1.png" ,"ship0_1.png");
-    load_surface("data/ship0_2.png" ,"ship0_2.png");
-    load_surface("data/ship0_3.png" ,"ship0_3.png");
-    load_surface("data/ship0_4.png" ,"ship0_4.png");
-    load_surface("data/ship0_5.png" ,"ship0_5.png");
-    load_surface("data/ship0_6.png" ,"ship0_6.png");
-    load_surface("data/ship0_7.png" ,"ship0_7.png");
-    load_surface("data/ship0_8.png" ,"ship0_8.png");
-    load_surface("data/ship0_9.png" ,"ship0_9.png");
-    load_surface("data/ship0_10.png","ship0_10.png");
-    load_surface("data/ship0_11.png","ship0_11.png");
-    load_surface("data/ship0_12.png","ship0_12.png");
-    load_surface("data/ship0_13.png","ship0_13.png");
-    load_surface("data/ship0_14.png","ship0_14.png");
-    load_surface("data/ship0_15.png","ship0_15.png");
+    load_surface("data/image/drawing-2.png","hud0");
 
-    load_surface("data/tile0.png","tile0.png");
-    load_surface("data/starfield.png","starfield.png");
-    load_surface("data/filled.png","filled.png");
-
-    load_surface("data/ship1.png","ship1.png");
-    load_surface("data/shot0.png","shot0.png");
-    load_surface("data/astroid0.png","astroid0.png");
+    load_surface("data/image/ship1.png","ship1");
+    load_surface("data/image/shot0.png","shot0.png");
+    load_surface("data/image/astroid0.png","astroid0.png");
 
     engine_event = new SDL_Event();
 
     //controller.push_back(new ship());
     //load_font("daya/lib-mono-regular.ttf","mono-regular-8",8);
-
-    //resources::control.push_back(new astroid(this));
-
-    for (int y=0;y < play_area::scale_height;y+=240)
+;
+    std::cout << "SCALE VALUE:" << scale_value(240) << " " << scale_value(320) << "\n" ;
+/*    for (int y=0;y < play_area::scale_height;y+=scale_value(240))
     {
-        for (int x=0;x < play_area::scale_width;x+=320)
+        for (int x=0;x < play_area::scale_width;x+=scale_value(320))
         {
+            std::cout << x << " [] " << y << "\n";
             resources::control.push_back(new tile(this,x,y,"starfield.png"));
         }
     }
 //gmath_random(,256)
 
-    for (int i=0;i < 1024;i++)
+    for (int i=0;i < 24;i++)
         resources::control.push_back(new astroid(this));
 
-        resources::control.push_back(new ship(this,32,32));
+    resources::control.push_back(new ship(this,32,32));
+
+    resources::control.push_back(new hud(this));*/
+    resources::control.push_back(new lua_object(this,"./object.lua"));
 
     game_map tmp_map;
     tmp_map.width=width;
@@ -207,6 +223,9 @@ bool game_engine::load(int width,int height,bool fullscreen, bool cursor)
     tmp_map.flags=0;
 
     map_data=&tmp_map;
+
+    global_lua::lua=lua_open();
+    luaL_openlibs(global_lua::lua);
 
     state=RUNNING;
     return 1;
@@ -470,33 +489,51 @@ TTF_Font * game_engine::get_font(std::string id)
 
 /** misc get**/
 
-std::string game_engine::get_map_name()
+bool load_map(std::string)
 {
-    return map_data->name;
+    for (int i=0; i < resources::control.size();i++)
+    {
+        controller * ctrl=resources::control.at(i);
+        if (ctrl->persistant==0)
+        {
+            ctrl->~controller();
+            resources::control.erase(resources::control.begin()+i);
+            //resources::control_id.erase(resources::control_id.begin()+i);
+        }
+
+    }
 }
 
-std::string game_engine::get_map_description()
+double game_engine::scale_value(double value)
 {
-    return map_data->description;
+    return value* play_area::scale;
 }
-
-int game_engine::get_map_width()
-{
-    return map_data->width;
-}
-
-int game_engine::get_map_height()
-{
-    return map_data->height;
-}
-
-long game_engine::get_map_flags()
-{
-    return map_data->flags;
-}
-
 
 /** update **/
+
+/*template<typename Object>
+
+struct PointerComp
+{
+    bool operator()(const Object* obj1, const Object* obj2)const
+    {
+        return obj1->z < obj2->z;
+    }
+};
+
+*/
+
+/**
+    implemented Z buffering !!!
+**/
+
+bool sort_control(controller *obj1, controller * obj2)
+{
+    if (obj1==NULL || obj2==NULL)
+        return NULL;
+
+    return obj1->z > obj2->z;
+}
 
 bool game_engine::update()
 {
@@ -508,8 +545,16 @@ bool game_engine::update()
 
     SDL_FillRect(screen, 0, SDL_MapRGB(screen->format, 0, 0, 0));
 
-    for (unsigned int i=0; i < resources::control.size(); i++)
+    if (!resources::control.size()==0)
+        std::sort(resources::control.begin(),resources::control.end(),sort_control);
+
+    std::vector<controller *> new_control2;
+
+    for (unsigned int i=0; i <= resources::control.size()-1; i++)
     {
+        if (resources::control.size()==0)
+            break;
+
         if (resources::control.at(i)==NULL)
             continue;
         //new error(INFO_HIGH,"Control"+convert_int_string(i));
@@ -519,17 +564,54 @@ bool game_engine::update()
         if (resources::control.at(i)->delete_this)
         {
             resources::control.at(i)->~controller();
-            resources::control.erase(resources::control.begin()+i);
+            resources::control.at(i)=NULL;
         }
+
+        new_control2.push_back(resources::control.at(i));
     }
 
-    for (unsigned int i=0; i < resources::view.size(); i++)
-    {
+    resources::control.swap(new_control2);
+
+    //for (unsigned int i=0; i < resources::view.size(); i++)
+    //{
         //view.at(i)->draw();
+    // }
+
+    std::vector<controller *> new_control;
+
+    if (game::reset)
+    {
+        for (unsigned int ii=0; ii <= resources::control.size()-1; ii++)
+        {
+
+            resources::control.at(ii)->reset();
+
+            std::cout << ii << " " << resources::control.at(ii)->id_type << " " <<  resources::control.at(ii)->delete_this;
+
+            /**
+                NOTE: Make note in git commit about increased efficeny in object execution loop
+            **/
+
+            if (resources::control.at(ii)->delete_this)
+            {
+                std::cout << " deleted\n";
+                resources::control.at(ii)->~controller();
+            }
+            else
+            {
+                new_control.push_back(resources::control.at(ii));
+            }
+        }
+
+        resources::control.swap(new_control);
+
+        game::reset=false;
+        for (int i=0;i < 10;i++)
+            resources::control.push_back(new astroid(this));
     }
 
-    //ship ship1();
-    //control.push_back(ship1);
+    //blit(320-56,0,get_surface("hud0.png"),0,1);
+
 
     SDL_Flip(screen);
     return 1;

@@ -24,6 +24,8 @@ class shot : public controller
 {
     public:
         shot(game_engine * gm_engine,float xx,float yy,float dir);
+        virtual void init();
+        virtual void reset();
         virtual void call(std::string item, void * value_1, void * value_2);
         virtual void get(std::string item, void * return_value);
         virtual void set(std::string item, void * value);

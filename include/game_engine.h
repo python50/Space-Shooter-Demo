@@ -10,6 +10,13 @@
 #ifndef GAME_ENGINE_H
 #define GAME_ENGINE_H
 
+extern "C"
+{
+#include "lua.h"
+#include "lualib.h"
+#include "lauxlib.h"
+}
+
 #include "SDL.h"
 #include "viewer.h"
 #include "controller.h"
@@ -66,6 +73,19 @@ namespace play_area
     extern int height;
 }
 
+namespace game
+{
+    extern int lives;
+    extern bool pause;
+    extern bool reset;
+    extern bool over;
+}
+
+namespace global_lua
+{
+    extern lua_State * lua;
+}
+
 namespace resources
 {
     extern std::vector< ::controller*> control;
@@ -107,11 +127,10 @@ class game_engine
         TTF_Font * get_font(std::string id);
 
         //get var
-        std::string get_map_name();
-        std::string get_map_description();
-        int get_map_width();
-        int get_map_height();
-        long get_map_flags();
+
+        bool load_map(std::string);
+
+        double scale_value(double val);
 
         // play
 
@@ -120,7 +139,9 @@ class game_engine
         bool play_sound(std::string id, int loop=1);
         bool play_sound(unsigned id, int loop=0);
 
-        SDL_Surface * render_text(std::string font, std::string texts, int fgR=255 , int fgG=255 , int fgB=255 , int fgA=255 ,int bgR=0 , int bgG=0 , int bgB=0 , int bgA=0 , textquality quality=solid);
+        SDL_Surface * render_text(std::string font,
+            std::string texts, int fgR=255 , int fgG=255 , int fgB=255 , int fgA=255 ,
+            int bgR=0 , int bgG=0 , int bgB=0 , int bgA=0 , textquality quality=solid);
 
         bool rect_collide(SDL_Rect a , SDL_Rect b);
         void * rect_collide_all(SDL_Rect rect,void * selfp,int number,void * ptr=NULL);

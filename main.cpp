@@ -28,7 +28,7 @@ int main()
 
     game_engine engine(320,240);
 
-    if (! engine.load(320,240,0,0))
+    if (! engine.load(640,480,0,0))
     {
         new error(FATAL_ERROR,"WWSiGE Failed To Load Necessary Resources, Quitting ...");
         return 100;
@@ -39,7 +39,6 @@ int main()
     FPSmanager manager;
     SDL_initFramerate(&manager);
     SDL_setFramerate(&manager, 30);
-
 
     while (engine.update())
     {

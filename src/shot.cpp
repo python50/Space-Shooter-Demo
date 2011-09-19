@@ -21,12 +21,14 @@ shot::shot(game_engine * g_engine,float xx,float yy,float dir)
 
     x=xx;
     y=yy;
+    z=9;
     direction=dir;
     speed=play_area::scale*6;
 
     life_counter=0;
 
     delete_this=0;
+    persistant=0;
     no_collide=0;
 
     sprite=gm_engine->get_surface("shot0.png");
@@ -34,7 +36,16 @@ shot::shot(game_engine * g_engine,float xx,float yy,float dir)
 
     rect.w=round(sprite->w * (view::width/view::target_width));
     rect.h=round(sprite->h * (view::height/view::target_height));
-    std::cout << rect.x << " " << rect.y << " ; " << rect.w << " " << rect.h << "\n";
+}
+
+void shot::init()
+{
+
+}
+
+void shot::reset()
+{
+    delete_this=1;
 }
 
 void shot::call(std::string item, void * value_1, void * value_2)
@@ -73,7 +84,7 @@ void shot::update()
     physics();
     gm_engine->blit(x,y,sprite,0);
 //std::cout << rect.x << " " << rect.y << " ; " << rect.w << " " << rect.h << "\n";
-    if (life_counter > 600)
+    if (life_counter > 60)
         delete_this=true;
 }
 

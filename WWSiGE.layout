@@ -32,7 +32,7 @@
 		<Cursor position="238" topLine="0" />
 	</File>
 	<File name="include/ship.h" open="1" top="0" tabpos="4">
-		<Cursor position="606" topLine="2" />
+		<Cursor position="1338" topLine="9" />
 	</File>
 	<File name="include/shot.h" open="1" top="0" tabpos="7">
 		<Cursor position="728" topLine="0" />
@@ -47,10 +47,10 @@
 		<Cursor position="923" topLine="36" />
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="634" topLine="6" />
+		<Cursor position="627" topLine="7" />
 	</File>
 	<File name="src/astroid.cpp" open="1" top="0" tabpos="9">
-		<Cursor position="477" topLine="10" />
+		<Cursor position="477" topLine="53" />
 	</File>
 	<File name="src/collision.cpp" open="0" top="0" tabpos="10">
 		<Cursor position="2155" topLine="30" />
@@ -67,8 +67,8 @@
 	<File name="src/error.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="298" topLine="0" />
 	</File>
-	<File name="src/game_engine.cpp" open="1" top="1" tabpos="3">
-		<Cursor position="12485" topLine="496" />
+	<File name="src/game_engine.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="2321" topLine="74" />
 	</File>
 	<File name="src/game_math.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="298" topLine="0" />
@@ -76,11 +76,11 @@
 	<File name="src/misc.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="298" topLine="0" />
 	</File>
-	<File name="src/ship.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="2276" topLine="73" />
+	<File name="src/ship.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="4856" topLine="148" />
 	</File>
 	<File name="src/shot.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="1608" topLine="49" />
+		<Cursor position="930" topLine="4" />
 	</File>
 	<File name="src/tile.cpp" open="1" top="0" tabpos="12">
 		<Cursor position="306" topLine="0" />

@@ -60,6 +60,9 @@ controller * rect_collide_all(SDL_Rect rect,controller * selfp,int number)
     for(unsigned int i=0;i < size;i+=1)
     {
 
+        if (resources::control.at(i)==NULL)
+            continue;
+
         if ( rect_collide(rect, resources::control.at(i)->rect ) )
         {
 

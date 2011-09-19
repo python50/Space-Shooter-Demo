@@ -52,7 +52,10 @@
 		<Unit filename="include/game_engine.h" />
 		<Unit filename="include/game_math.h" />
 		<Unit filename="include/global.h" />
+		<Unit filename="include/hud.h" />
+		<Unit filename="include/lua_object.h" />
 		<Unit filename="include/main.h" />
+		<Unit filename="include/map_parser.h" />
 		<Unit filename="include/misc.h" />
 		<Unit filename="include/ship.h" />
 		<Unit filename="include/shot.h" />
@@ -186,6 +189,9 @@
 		<Unit filename="src/error.cpp" />
 		<Unit filename="src/game_engine.cpp" />
 		<Unit filename="src/game_math.cpp" />
+		<Unit filename="src/hud.cpp" />
+		<Unit filename="src/lua_object.cpp" />
+		<Unit filename="src/map_parser.cpp" />
 		<Unit filename="src/misc.cpp" />
 		<Unit filename="src/ship.cpp" />
 		<Unit filename="src/shot.cpp" />

@@ -44,6 +44,16 @@ void controller::update()
 
 }
 
+void controller::init()
+{
+
+}
+
+void controller::reset()
+{
+
+}
+
 controller::~controller()
 {
     //dtor

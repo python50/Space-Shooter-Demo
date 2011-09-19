@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1200921650 source:/home/jason/Files/Code/c++/WWSiGE/lua/lauxlib.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lauxlib.c
 	<ctype.h>
 	<errno.h>
 	<stdarg.h>
@@ -9,12 +9,12 @@
 	"lua.h"
 	"lauxlib.h"
 
-1310578802 /home/jason/Files/Code/c++/WWSiGE/lua/lua.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lua.h
 	<stdarg.h>
 	<stddef.h>
 	"luaconf.h"
 
-1202747108 /home/jason/Files/Code/c++/WWSiGE/lua/luaconf.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/luaconf.h
 	<limits.h>
 	<stddef.h>
 	<unistd.h>
@@ -27,12 +27,12 @@
 	<math.h>
 	<unistd.h>
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lauxlib.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lauxlib.h
 	<stddef.h>
 	<stdio.h>
 	"lua.h"
 
-1203007582 source:/home/jason/Files/Code/c++/WWSiGE/lua/lbaselib.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lbaselib.c
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
@@ -41,10 +41,10 @@
 	"lauxlib.h"
 	"lualib.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lualib.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lualib.h
 	"lua.h"
 
-1198855942 source:/home/jason/Files/Code/c++/WWSiGE/lua/lcode.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lcode.c
 	<stdlib.h>
 	"lua.h"
 	"lcode.h"
@@ -58,67 +58,67 @@
 	"lparser.h"
 	"ltable.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lcode.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lcode.h
 	"llex.h"
 	"lobject.h"
 	"lopcodes.h"
 	"lparser.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/llex.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/llex.h
 	"lobject.h"
 	"lzio.h"
 
-1218029388 /home/jason/Files/Code/c++/WWSiGE/lua/lobject.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lobject.h
 	<stdarg.h>
 	"llimits.h"
 	"lua.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/llimits.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/llimits.h
 	<limits.h>
 	<stddef.h>
 	"lua.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lzio.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lzio.h
 	"lua.h"
 	"lmem.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lmem.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lmem.h
 	<stddef.h>
 	"llimits.h"
 	"lua.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lopcodes.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lopcodes.h
 	"llimits.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lparser.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lparser.h
 	"llimits.h"
 	"lobject.h"
 	"lzio.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/ldebug.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/ldebug.h
 	"lstate.h"
 
-1199373638 /home/jason/Files/Code/c++/WWSiGE/lua/lstate.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lstate.h
 	"lua.h"
 	"lobject.h"
 	"ltm.h"
 	"lzio.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/ltm.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/ltm.h
 	"lobject.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/ldo.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/ldo.h
 	"lobject.h"
 	"lstate.h"
 	"lzio.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lgc.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lgc.h
 	"lobject.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/ltable.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/ltable.h
 	"lobject.h"
 
-1200921080 source:/home/jason/Files/Code/c++/WWSiGE/lua/ldblib.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/ldblib.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -126,7 +126,7 @@
 	"lauxlib.h"
 	"lualib.h"
 
-1210265786 source:/home/jason/Files/Code/c++/WWSiGE/lua/ldebug.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/ldebug.c
 	<stdarg.h>
 	<stddef.h>
 	<string.h>
@@ -144,23 +144,23 @@
 	"ltm.h"
 	"lvm.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lapi.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lapi.h
 	"lobject.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lfunc.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lfunc.h
 	"lobject.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lstring.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lstring.h
 	"lgc.h"
 	"lobject.h"
 	"lstate.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lvm.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lvm.h
 	"ldo.h"
 	"lobject.h"
 	"ltm.h"
 
-1200695482 source:/home/jason/Files/Code/c++/WWSiGE/lua/ldo.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/ldo.c
 	<setjmp.h>
 	<stdlib.h>
 	<string.h>
@@ -181,18 +181,18 @@
 	"lvm.h"
 	"lzio.h"
 
-1198760544 /home/jason/Files/Code/c++/WWSiGE/lua/lundump.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/lua/lundump.h
 	"lobject.h"
 	"lzio.h"
 
-1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/ldump.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/ldump.c
 	<stddef.h>
 	"lua.h"
 	"lobject.h"
 	"lstate.h"
 	"lundump.h"
 
-1198853922 source:/home/jason/Files/Code/c++/WWSiGE/lua/lfunc.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lfunc.c
 	<stddef.h>
 	"lua.h"
 	"lfunc.h"
@@ -201,7 +201,7 @@
 	"lobject.h"
 	"lstate.h"
 
-1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lgc.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lgc.c
 	<string.h>
 	"lua.h"
 	"ldebug.h"
@@ -215,12 +215,12 @@
 	"ltable.h"
 	"ltm.h"
 
-1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/linit.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/linit.c
 	"lua.h"
 	"lualib.h"
 	"lauxlib.h"
 
-1200678462 source:/home/jason/Files/Code/c++/WWSiGE/lua/liolib.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/liolib.c
 	<errno.h>
 	<stdio.h>
 	<stdlib.h>
@@ -229,7 +229,7 @@
 	"lauxlib.h"
 	"lualib.h"
 
-1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/llex.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/llex.c
 	<ctype.h>
 	<locale.h>
 	<string.h>
@@ -243,14 +243,14 @@
 	"ltable.h"
 	"lzio.h"
 
-1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lmathlib.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lmathlib.c
 	<stdlib.h>
 	<math.h>
 	"lua.h"
 	"lauxlib.h"
 	"lualib.h"
 
-1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lmem.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lmem.c
 	<stddef.h>
 	"lua.h"
 	"ldebug.h"
@@ -259,7 +259,7 @@
 	"lobject.h"
 	"lstate.h"
 
-1218029368 source:/home/jason/Files/Code/c++/WWSiGE/lua/loadlib.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/loadlib.c
 	<stdlib.h>
 	<string.h>
 	"lua.h"
@@ -269,7 +269,7 @@
 	<windows.h>
 	<mach-o/dyld.h>
 
-1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lobject.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lobject.c
 	<ctype.h>
 	<stdarg.h>
 	<stdio.h>
@@ -283,10 +283,10 @@
 	"lstring.h"
 	"lvm.h"
 
-1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lopcodes.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lopcodes.c
 	"lopcodes.h"
 
-1200674298 source:/home/jason/Files/Code/c++/WWSiGE/lua/loslib.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/loslib.c
 	<errno.h>
 	<locale.h>
 	<stdlib.h>
@@ -296,7 +296,7 @@
 	"lauxlib.h"
 	"lualib.h"
 
-1198855942 source:/home/jason/Files/Code/c++/WWSiGE/lua/lparser.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lparser.c
 	<string.h>
 	"lua.h"
 	"lcode.h"
@@ -312,7 +312,7 @@
 	"lstring.h"
 	"ltable.h"
 
-1199373638 source:/home/jason/Files/Code/c++/WWSiGE/lua/lstate.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lstate.c
 	<stddef.h>
 	"lua.h"
 	"ldebug.h"
@@ -326,7 +326,7 @@
 	"ltable.h"
 	"ltm.h"
 
-1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lstring.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lstring.c
 	<string.h>
 	"lua.h"
 	"lmem.h"
@@ -334,7 +334,7 @@
 	"lstate.h"
 	"lstring.h"
 
-1215797240 source:/home/jason/Files/Code/c++/WWSiGE/lua/lstrlib.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lstrlib.c
 	<ctype.h>
 	<stddef.h>
 	<stdio.h>
@@ -344,7 +344,7 @@
 	"lauxlib.h"
 	"lualib.h"
 
-1198855942 source:/home/jason/Files/Code/c++/WWSiGE/lua/ltable.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/ltable.c
 	<math.h>
 	<string.h>
 	"lua.h"
@@ -356,13 +356,13 @@
 	"lstate.h"
 	"ltable.h"
 
-1203007618 source:/home/jason/Files/Code/c++/WWSiGE/lua/ltablib.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/ltablib.c
 	<stddef.h>
 	"lua.h"
 	"lauxlib.h"
 	"lualib.h"
 
-1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/ltm.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/ltm.c
 	<string.h>
 	"lua.h"
 	"lobject.h"
@@ -371,7 +371,7 @@
 	"ltable.h"
 	"ltm.h"
 
-1207338700 source:/home/jason/Files/Code/c++/WWSiGE/lua/lundump.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lundump.c
 	<string.h>
 	"lua.h"
 	"ldebug.h"
@@ -383,7 +383,7 @@
 	"lundump.h"
 	"lzio.h"
 
-1198855942 source:/home/jason/Files/Code/c++/WWSiGE/lua/lvm.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lvm.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -400,7 +400,7 @@
 	"ltm.h"
 	"lvm.h"
 
-1198760544 source:/home/jason/Files/Code/c++/WWSiGE/lua/lzio.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lzio.c
 	<string.h>
 	"lua.h"
 	"llimits.h"
@@ -408,7 +408,7 @@
 	"lstate.h"
 	"lzio.h"
 
-1174868258 source:/home/jason/Files/Code/c++/WWSiGE/lua/print.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/print.c
 	<ctype.h>
 	<stdio.h>
 	"ldebug.h"
@@ -416,7 +416,7 @@
 	"lopcodes.h"
 	"lundump.h"
 
-1314981944 source:/home/jason/Files/Code/c++/WWSiGE/main.cpp
+1316390265 source:/home/jason/Files/Code/c++/WWSiGE/main.cpp
 	"lua.h"
 	"lualib.h"
 	"lauxlib.h"
@@ -427,7 +427,7 @@
 	<stdlib.h>
 	<SDL_framerate.h>
 
-1215196878 source:/home/jason/Files/Code/c++/WWSiGE/lua/lapi.c
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/lua/lapi.c
 	<assert.h>
 	<math.h>
 	<stdarg.h>
@@ -447,40 +447,42 @@
 	"lundump.h"
 	"lvm.h"
 
-1313782242 source:/home/jason/Files/Code/c++/WWSiGE/src/error.cpp
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/src/error.cpp
 	"error.h"
 	<stdlib.h>
 	<stdio.h>
 	<time.h>
 
-1313719556 /home/jason/Files/Code/c++/WWSiGE/include/error.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/include/error.h
 	<stdlib.h>
 	<iostream>
 
-1314388354 source:/home/jason/Files/Code/c++/WWSiGE/src/config_file.cpp
+1316364591 source:/home/jason/Files/Code/c++/WWSiGE/src/config_file.cpp
 	"lua.h"
 	"lualib.h"
 	"lauxlib.h"
 	"error.h"
 	"config_file.h"
+	"game_engine.h"
 
-1313719556 /home/jason/Files/Code/c++/WWSiGE/include/config_file.h
+1316364181 /home/jason/Files/Code/c++/WWSiGE/include/config_file.h
 	<iostream>
+	"game_engine.h"
 
-1313719556 /home/jason/Files/Code/c++/WWSiGE/include/misc.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/include/misc.h
 	<sstream>
 
-1314788358 source:/home/jason/Files/Code/c++/WWSiGE/src/controller.cpp
+1315502702 source:/home/jason/Files/Code/c++/WWSiGE/src/controller.cpp
 	"controller.h"
 
-1314992478 /home/jason/Files/Code/c++/WWSiGE/include/controller.h
+1316019810 /home/jason/Files/Code/c++/WWSiGE/include/controller.h
 	<iostream>
 	"SDL.h"
 
-1313782240 source:/home/jason/Files/Code/c++/WWSiGE/src/display.cpp
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/src/display.cpp
 	"display.h"
 
-1313719556 /home/jason/Files/Code/c++/WWSiGE/include/display.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/include/display.h
 
 1311704236 source:/home/jason/Files/Code/c++/WWSiGE/src/engine.cpp
 	"lua.h"
@@ -491,13 +493,16 @@
 1311704235 /home/jason/Files/Code/c++/WWSiGE/include/engine.h
 	<iostream>
 
-1313782242 source:/home/jason/Files/Code/c++/WWSiGE/src/viewer.cpp
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/src/viewer.cpp
 	"viewer.h"
 
-1313782240 /home/jason/Files/Code/c++/WWSiGE/include/viewer.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/include/viewer.h
 	"iostream"
 
-1314920854 /home/jason/Files/Code/c++/WWSiGE/include/game_engine.h
+1316364248 /home/jason/Files/Code/c++/WWSiGE/include/game_engine.h
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
 	"SDL.h"
 	"viewer.h"
 	"controller.h"
@@ -505,7 +510,11 @@
 	"SDL_ttf.h"
 	"vector"
 
-1315072715 source:/home/jason/Files/Code/c++/WWSiGE/src/game_engine.cpp
+1316390056 source:/home/jason/Files/Code/c++/WWSiGE/src/game_engine.cpp
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+	"algorithm"
 	"game_engine.h"
 	"SDL.h"
 	"SDL_ttf.h"
@@ -516,13 +525,15 @@
 	"game_math.h"
 	"main.h"
 	"ship.h"
+	"hud.h"
 	"astroid.h"
 	"misc.h"
 	<stdlib.h>
 	"SDL_rotozoom.h"
 	"tile.h"
+	"lua_object.h"
 
-1301616952 /usr/include/SDL/SDL.h
+1276084796 /usr/include/SDL/SDL.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_audio.h"
@@ -541,14 +552,14 @@
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_main.h
+1276084796 /usr/include/SDL/SDL_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_stdinc.h
+1276084796 /usr/include/SDL/SDL_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -574,17 +585,17 @@
 	<stdlib.h>
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_config.h
+1276084796 /usr/include/SDL/SDL_config.h
 	"SDL_platform.h"
 	<stdarg.h>
 
-1301616952 /usr/include/SDL/SDL_platform.h
+1276084796 /usr/include/SDL/SDL_platform.h
 
-1301616952 /usr/include/SDL/begin_code.h
+1276084796 /usr/include/SDL/begin_code.h
 
-1301616952 /usr/include/SDL/close_code.h
+1276084796 /usr/include/SDL/close_code.h
 
-1301616952 /usr/include/SDL/SDL_audio.h
+1276084796 /usr/include/SDL/SDL_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -594,23 +605,23 @@
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_error.h
+1276084796 /usr/include/SDL/SDL_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_endian.h
+1276084796 /usr/include/SDL/SDL_endian.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_mutex.h
+1276084796 /usr/include/SDL/SDL_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_thread.h
+1276084796 /usr/include/SDL/SDL_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_mutex.h"
@@ -618,24 +629,24 @@
 	<process.h>
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_rwops.h
+1276084796 /usr/include/SDL/SDL_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_cdrom.h
+1276084796 /usr/include/SDL/SDL_cdrom.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_cpuinfo.h
+1276084796 /usr/include/SDL/SDL_cpuinfo.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_events.h
+1276084796 /usr/include/SDL/SDL_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_active.h"
@@ -646,70 +657,70 @@
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_active.h
+1276084796 /usr/include/SDL/SDL_active.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_keyboard.h
+1276084796 /usr/include/SDL/SDL_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keysym.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_keysym.h
+1276084796 /usr/include/SDL/SDL_keysym.h
 
-1301616952 /usr/include/SDL/SDL_mouse.h
+1276084796 /usr/include/SDL/SDL_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_video.h
+1276084796 /usr/include/SDL/SDL_video.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_joystick.h
+1276084796 /usr/include/SDL/SDL_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_quit.h
+1276084796 /usr/include/SDL/SDL_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1301616952 /usr/include/SDL/SDL_loadso.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1301616952 /usr/include/SDL/SDL_timer.h
+1276084796 /usr/include/SDL/SDL_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_version.h
+1276084796 /usr/include/SDL/SDL_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1276084796 /usr/include/SDL/SDL_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1301738089 /usr/include/SDL/SDL_ttf.h
+1242077228 /usr/include/SDL/SDL_ttf.h
 	"SDL.h"
 	"begin_code.h"
 	"close_code.h"
 
-1313719556 /home/jason/Files/Code/c++/WWSiGE/include/global.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/include/global.h
 
-1292266893 /usr/include/SDL/SDL_mixer.h
+1250558254 /usr/include/SDL/SDL_mixer.h
 	"SDL_types.h"
 	"SDL_rwops.h"
 	"SDL_audio.h"
@@ -718,21 +729,21 @@
 	"begin_code.h"
 	"close_code.h"
 
-1301616952 /usr/include/SDL/SDL_types.h
+1276084796 /usr/include/SDL/SDL_types.h
 	"SDL_stdinc.h"
 
-1300979479 /usr/include/SDL/SDL_image.h
+1259626332 /usr/include/SDL/SDL_image.h
 	"SDL.h"
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
 
-1313782242 source:/home/jason/Files/Code/c++/WWSiGE/src/game_math.cpp
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/src/game_math.cpp
 	"game_math.h"
 	"stdlib.h"
 	"time.h"
 
-1313719556 /home/jason/Files/Code/c++/WWSiGE/include/game_math.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/include/game_math.h
 
 1215196878 source:/media/78DB-E39B/Code/c++/WWSiGE/lua/lapi.c
 	<assert.h>
@@ -1238,15 +1249,16 @@
 1311700642 source:/media/78DB-E39B/Code/c++/WWSiGE/src/viewer.cpp
 	"viewer.h"
 
-1315073239 source:/home/jason/Files/Code/c++/WWSiGE/src/ship.cpp
+1316284680 source:/home/jason/Files/Code/c++/WWSiGE/src/ship.cpp
 	"ship.h"
 	"math.h"
 	"shot.h"
+	"misc.h"
 	"collision.h"
 	"SDL_rotozoom.h"
 	<iostream>
 
-1314982916 /home/jason/Files/Code/c++/WWSiGE/include/ship.h
+1316227958 /home/jason/Files/Code/c++/WWSiGE/include/ship.h
 	"SDL.h"
 	"SDL_mixer.h"
 	"SDL_image.h"
@@ -1257,7 +1269,7 @@
 	<vector>
 	<SDL.h>
 
-1313719556 /home/jason/Files/Code/c++/WWSiGE/include/main.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/include/main.h
 	"SDL.h"
 	"SDL_mixer.h"
 	"SDL_image.h"
@@ -1275,19 +1287,19 @@
 	"ship.h"
 	<iostream>
 
-1194030249 /usr/include/SDL/SDL_net.h
+1193837800 /usr/include/SDL/SDL_net.h
 	"SDL.h"
 	"SDL_endian.h"
 	"SDL_version.h"
 	"begin_code.h"
 	"close_code.h"
 
-1287173824 /usr/include/SDL/SDL_framerate.h
+1258509047 /usr/include/SDL/SDL_framerate.h
 	"SDL.h"
 
 1287173824 /usr/include/SDL/SDL_imageFilter.h
 
-1287173824 /usr/include/SDL/SDL_rotozoom.h
+1258509047 /usr/include/SDL/SDL_rotozoom.h
 	<math.h>
 	"SDL.h"
 
@@ -1303,7 +1315,7 @@
 
 1287173824 /usr/include/SDL/SDL_gfxPrimitives_font.h
 
-1314993150 source:/home/jason/Files/Code/c++/WWSiGE/src/astroid.cpp
+1316364248 source:/home/jason/Files/Code/c++/WWSiGE/src/astroid.cpp
 	"astroid.h"
 	"error.h"
 	"SDL_rotozoom.h"
@@ -1311,7 +1323,7 @@
 	"misc.h"
 	"collision.h"
 
-1314788348 /home/jason/Files/Code/c++/WWSiGE/include/astroid.h
+1315502206 /home/jason/Files/Code/c++/WWSiGE/include/astroid.h
 	"game_engine.h"
 
 1313010972 source:/home/jason/Files/Code/c++/WWSiGE/src/ship_view.cpp
@@ -1320,17 +1332,17 @@
 1312856340 /home/jason/Files/Code/c++/WWSiGE/include/ship_view.h
 	<viewer.h>
 
-1313782242 source:/home/jason/Files/Code/c++/WWSiGE/src/misc.cpp
+1315500466 source:/home/jason/Files/Code/c++/WWSiGE/src/misc.cpp
 	"misc.h"
 
-1315073074 source:/home/jason/Files/Code/c++/WWSiGE/src/shot.cpp
+1316284702 source:/home/jason/Files/Code/c++/WWSiGE/src/shot.cpp
 	"shot.h"
 	"math.h"
 	"SDL_rotozoom.h"
 	<iostream>
 	"collision.h"
 
-1314787200 /home/jason/Files/Code/c++/WWSiGE/include/shot.h
+1315502664 /home/jason/Files/Code/c++/WWSiGE/include/shot.h
 	"SDL.h"
 	"SDL_mixer.h"
 	"SDL_image.h"
@@ -1340,19 +1352,51 @@
 	"error.h"
 	<SDL.h>
 
-1314992549 source:/home/jason/Files/Code/c++/WWSiGE/src/collision.cpp
+1315848362 source:/home/jason/Files/Code/c++/WWSiGE/src/collision.cpp
 	"game_engine.h"
 	"controller.h"
 	"math.h"
 
-1314658452 /home/jason/Files/Code/c++/WWSiGE/include/collision.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/include/collision.h
 	"game_engine.h"
 	"controller.h"
 
-1314982602 /home/jason/Files/Code/c++/WWSiGE/include/tile.h
+1315500466 /home/jason/Files/Code/c++/WWSiGE/include/tile.h
 	"game_engine.h"
 	<controller.h>
 
-1314992567 source:/home/jason/Files/Code/c++/WWSiGE/src/tile.cpp
+1316019910 source:/home/jason/Files/Code/c++/WWSiGE/src/tile.cpp
 	"tile.h"
+
+1316019250 /home/jason/Files/Code/c++/WWSiGE/include/hud.h
+	"game_engine.h"
+	<controller.h>
+
+1316105466 source:/home/jason/Files/Code/c++/WWSiGE/src/hud.cpp
+	"hud.h"
+	"game_math.h"
+	"misc.h"
+
+1316366951 source:/home/jason/Files/Code/c++/WWSiGE/src/map_parser.cpp
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+	"game_engine.h"
+	"error.h"
+	"map_parser.h"
+
+1316203221 /home/jason/Files/Code/c++/WWSiGE/include/map_parser.h
+	<iostream>
+
+1316428861 source:/home/jason/Files/Code/c++/WWSiGE/src/lua_object.cpp
+	"lua_object.h"
+
+1316398749 /home/jason/Files/Code/c++/WWSiGE/include/lua_object.h
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+	"game_engine.h"
+	<controller.h>
+	"error.h"
+	"iostream"
 

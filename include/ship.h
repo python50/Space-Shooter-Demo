@@ -25,6 +25,8 @@ class ship : public controller
 {
     public:
         ship(game_engine * gm_engine,float x, float y);
+        void init();
+        void reset();
         virtual void call(std::string item, void * value_1, void * value_2);
         virtual void get(std::string item, void * return_value);
         virtual void set(std::string item, void * value);
@@ -40,9 +42,14 @@ class ship : public controller
         float speed;
         float friction;
         float image_offset;
+        float start_x;
+        float start_y;
+        float start_direction;
         std::vector<SDL_Surface *> sprites;
         game_engine * gm_engine;
         int shot_counter;
+        int reset_counter;
+        bool god;
 };
 
 #endif // SHIP_H

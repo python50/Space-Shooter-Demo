@@ -14,13 +14,9 @@ extern "C" {
 
 #include "error.h"
 #include "config_file.h"
+#include "game_engine.h"
 
 using namespace std;
-
-/*
-    TODO:
-        fix multi LUA_Stare creation
-*/
 
 config_file::config_file(string name)
 {
@@ -29,37 +25,26 @@ config_file::config_file(string name)
     filename=name;
 }
 
-/*
-    Ita bad Practice to create more than one LUA_State
-    it sould be created one passed around function to function
-    via a refrence ...
-*/
-
 int config_file::get_int(string var_name)
 {
     new error(INFO_L,"Config File `"+filename+"`: getting `"+var_name+"`");
 
     int number=0;
 
-    lua_State *L = lua_open();
-    luaL_openlibs(L);
-
-    if (!luaL_dofile(L,filename.c_str())) //execute config file
+    if (!luaL_dofile(global_lua::lua,filename.c_str())) //execute config file
     {
-        lua_getglobal(L,var_name.c_str());
-        if (!lua_isnumber(L, -1))
+        lua_getglobal(global_lua::lua,var_name.c_str());
+        if (!lua_isnumber(global_lua::lua, -1))
         {
             new error(WARNING,filename+": `"+var_name+"` should be a number");
         }
         else
-            number=(int)lua_tonumber(L, -1);
+            number=(int)lua_tonumber(global_lua::lua, -1);
     }
     else
     {
         new error(WARNING,"cannot execute "+filename);
     }
-
-    lua_close(L);
 
     return number;
 }
@@ -68,25 +53,20 @@ float config_file::get_float(string var_name)
 {
     float number=0;
 
-    lua_State *L = lua_open();
-    luaL_openlibs(L);
-
-    if (!luaL_dofile(L,filename.c_str())) //execute config file
+    if (!luaL_dofile(global_lua::lua,filename.c_str())) //execute config file
     {
-        lua_getglobal(L,var_name.c_str());
-        if (!lua_isnumber(L, -1))
+        lua_getglobal(global_lua::lua,var_name.c_str());
+        if (!lua_isnumber(global_lua::lua, -1))
         {
             new error(WARNING,filename+": `"+var_name+"` should be a number");
         }
         else
-            number=(float)lua_tonumber(L, -1);
+            number=(float)lua_tonumber(global_lua::lua, -1);
     }
     else
     {
         new error(WARNING,"cannot execute "+filename);
     }
-
-    lua_close(L);
 
     return number;
 }
@@ -95,25 +75,20 @@ string config_file::get_string(string var_name)
 {
     string data_string="";
 
-    lua_State *L = lua_open();
-    luaL_openlibs(L);
-
-    if (!luaL_dofile(L,filename.c_str())) //execute config file
+    if (!luaL_dofile(global_lua::lua,filename.c_str())) //execute config file
     {
-        lua_getglobal(L,var_name.c_str());
-        if (!lua_isstring(L, -1))
+        lua_getglobal(global_lua::lua,var_name.c_str());
+        if (!lua_isstring(global_lua::lua, -1))
         {
             new error(WARNING,filename+": `"+var_name+"` should be a string");
         }
         else
-            data_string=lua_tolstring(L, -1,NULL);
+            data_string=lua_tolstring(global_lua::lua, -1,NULL);
     }
     else
     {
         new error(WARNING,"cannot execute "+filename);
     }
-
-    lua_close(L);
 
     return data_string;
 }

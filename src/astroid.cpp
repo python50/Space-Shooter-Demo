@@ -12,6 +12,7 @@
 #include "game_math.h"
 #include "misc.h"
 #include "collision.h"
+
 astroid::astroid(game_engine * engine)
 {
     new error(INFO_LOW,"Astroid Created");
@@ -22,10 +23,11 @@ astroid::astroid(game_engine * engine)
     y=gmath_random(0,play_area::scale_height*10)/10;
     direction=gmath_random(0,3600)/10;
     image_angle=0;
-    speed=play_area::scale*(1+(gmath_random(0,40)/10));
+    speed=play_area::scale*(1+(gmath_random(0,20)/10));
     friction=0;
 
     delete_this=0;
+    persistant=0;
     no_collide=0;
 
     sprite=gm_engine->get_surface("astroid0.png");
@@ -34,8 +36,18 @@ astroid::astroid(game_engine * engine)
     rect.h=sprite->h;
 
     gm_engine=engine;
+    z=0;
 }
 
+void astroid::init()
+{
+
+}
+
+void astroid::reset() //simply delete at reset
+{
+    delete_this=1;
+}
 
 void astroid::call(std::string item, void * value_1, void * return_value)
 {

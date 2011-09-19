@@ -10,6 +10,7 @@
 #define CONFIG_FILE_H
 
 #include <iostream>
+#include "game_engine.h"
 using namespace std;
 
 class config_file

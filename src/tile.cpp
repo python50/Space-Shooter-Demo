@@ -13,6 +13,7 @@ tile::tile(game_engine *geng,float xx, float yy, std::string image)
     id_type="tile";
     delete_this=0;
     no_collide=1;
+    z=15;
 }
 
 void tile::update()
