@@ -15,7 +15,7 @@ extern "C" {
 class lua_object : public controller
 {
     public:
-        lua_object(game_engine * gm_engine, std::string filename);
+        lua_object(game_engine * gm_engine, std::string filename, float x, float y);
         void update();
         virtual ~lua_object();
     protected:

@@ -2,14 +2,21 @@
 #define MAP_PARSER_H
 
 #include <iostream>
+#include "game_engine.h"
+
 
 class map_parser
 {
     public:
-        map_parser(std::string filename);
+        map_parser(game_engine * gm_engine, std::string filename);
         virtual ~map_parser();
     protected:
     private:
+        void parse_layer();
+        void parse_object();
+
+        lua_State *L;
+        game_engine * gm_engine;
         std::string filename;
 };
 

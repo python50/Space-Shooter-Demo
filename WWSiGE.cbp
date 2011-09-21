@@ -197,6 +197,10 @@
 		<Unit filename="src/shot.cpp" />
 		<Unit filename="src/tile.cpp" />
 		<Unit filename="src/viewer.cpp" />
+		<Unit filename="../../foo.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<debugger />

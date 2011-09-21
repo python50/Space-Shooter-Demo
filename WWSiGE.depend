@@ -510,7 +510,7 @@
 	"SDL_ttf.h"
 	"vector"
 
-1316390056 source:/home/jason/Files/Code/c++/WWSiGE/src/game_engine.cpp
+1316644366 source:/home/jason/Files/Code/c++/WWSiGE/src/game_engine.cpp
 	"lua.h"
 	"lualib.h"
 	"lauxlib.h"
@@ -532,6 +532,7 @@
 	"SDL_rotozoom.h"
 	"tile.h"
 	"lua_object.h"
+	"map_parser.h"
 
 1276084796 /usr/include/SDL/SDL.h
 	"SDL_main.h"
@@ -1377,21 +1378,23 @@
 	"game_math.h"
 	"misc.h"
 
-1316366951 source:/home/jason/Files/Code/c++/WWSiGE/src/map_parser.cpp
+1316646732 source:/home/jason/Files/Code/c++/WWSiGE/src/map_parser.cpp
 	"lua.h"
 	"lualib.h"
 	"lauxlib.h"
 	"game_engine.h"
 	"error.h"
 	"map_parser.h"
-
-1316203221 /home/jason/Files/Code/c++/WWSiGE/include/map_parser.h
-	<iostream>
-
-1316428861 source:/home/jason/Files/Code/c++/WWSiGE/src/lua_object.cpp
 	"lua_object.h"
 
-1316398749 /home/jason/Files/Code/c++/WWSiGE/include/lua_object.h
+1316641070 /home/jason/Files/Code/c++/WWSiGE/include/map_parser.h
+	<iostream>
+	"game_engine.h"
+
+1316647173 source:/home/jason/Files/Code/c++/WWSiGE/src/lua_object.cpp
+	"lua_object.h"
+
+1316646723 /home/jason/Files/Code/c++/WWSiGE/include/lua_object.h
 	"lua.h"
 	"lualib.h"
 	"lauxlib.h"

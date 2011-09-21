@@ -33,6 +33,7 @@ extern "C"
 #include "SDL_rotozoom.h"
 #include "tile.h"
 #include "lua_object.h"
+#include "map_parser.h"
 
 namespace view
 {
@@ -213,7 +214,9 @@ bool game_engine::load(int width,int height,bool fullscreen, bool cursor)
     resources::control.push_back(new ship(this,32,32));
 
     resources::control.push_back(new hud(this));*/
-    resources::control.push_back(new lua_object(this,"./object.lua"));
+    //resources::control.push_back(new lua_object(this,"./object.lua"));
+
+    map_parser parser(this,"map.lua");//data/maps/map.lua");
 
     game_map tmp_map;
     tmp_map.width=width;

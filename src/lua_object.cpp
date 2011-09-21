@@ -1,13 +1,16 @@
 #include "lua_object.h"
 
-lua_object::lua_object(game_engine * gm_engine_, std::string filename)//,float xx,float yy, float zz, float a, float b)
+lua_object::lua_object(game_engine * gm_engine_, std::string filename ,float xx,float yy)//, float zz, float a, float b)
 {
     gm_engine=gm_engine_;
     scriptname= filename;
     script_error=0;
-    x=0;//xx;
-    y=0;//yy;
-    x=0;//zz;
+    x=xx;
+    y=yy;
+    z=0;//zz;
+
+    std::cout << xx << yy << "\n";
+
     delete_this=0;
     persistant=0;
     no_collide=0;
@@ -37,7 +40,7 @@ lua_object::lua_object(game_engine * gm_engine_, std::string filename)//,float x
     else
     {
         script_error=true;
-        new error(WARNING,"cannot execute "+filename);
+        new error(WARNING,"cannot execute `"+filename+"`");
     }
 
     if (!script_error)
@@ -45,6 +48,11 @@ lua_object::lua_object(game_engine * gm_engine_, std::string filename)//,float x
         lua_getglobal (L, "init");
         lua_call (L, 0, 0);
     }
+
+    lua_pushnumber(L,xx*16);
+    lua_setglobal(L, "x");
+    lua_pushnumber(L,yy*16);
+    lua_setglobal(L, "y");
 
 }
 

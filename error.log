@@ -72709,3 +72709,420 @@
 [06:55:11] INFO HIGH: New window created: 640 480
 [06:55:12] INFO HIGH: WWSiGE Started
 [06:55:32] INFO HIGH: WWSiGE Closed
+[17:17:27] INFO HIGH: WWSiGE Loading
+[17:17:27] INFO HIGH: New window created: 640 480
+[17:17:28] INFO HIGH: WWSiGE Started
+[17:17:45] INFO HIGH: WWSiGE Closed
+[18:06:44] INFO HIGH: WWSiGE Loading
+[18:06:44] INFO HIGH: New window created: 640 480
+[18:06:45] INFO HIGH: WWSiGE Started
+[18:06:46] INFO HIGH: WWSiGE Closed
+[06:26:33] INFO HIGH: WWSiGE Loading
+[06:26:33] INFO HIGH: New window created: 640 480
+[06:26:34] INFO HIGH: WWSiGE Started
+[06:26:41] INFO HIGH: WWSiGE Closed
+[16:19:21] INFO HIGH: WWSiGE Loading
+[16:19:22] INFO HIGH: New window created: 640 480
+[16:19:22] INFO HIGH: WWSiGE Started
+[16:22:54] INFO HIGH: WWSiGE Loading
+[16:22:54] INFO HIGH: New window created: 640 480
+[16:22:54] INFO HIGH: WWSiGE Started
+[16:22:56] INFO HIGH: WWSiGE Closed
+[16:23:23] INFO HIGH: WWSiGE Loading
+[16:23:24] INFO HIGH: New window created: 640 480
+[16:23:24] INFO HIGH: WWSiGE Started
+[16:23:25] INFO HIGH: WWSiGE Closed
+[16:24:30] INFO HIGH: WWSiGE Loading
+[16:24:31] INFO HIGH: New window created: 640 480
+[16:24:31] INFO HIGH: WWSiGE Started
+[16:24:35] INFO HIGH: WWSiGE Closed
+[16:26:43] INFO HIGH: WWSiGE Loading
+[16:26:43] INFO HIGH: New window created: 640 480
+[16:26:43] INFO HIGH: WWSiGE Started
+[16:26:44] INFO HIGH: WWSiGE Closed
+[16:30:25] INFO HIGH: WWSiGE Loading
+[16:30:26] INFO HIGH: New window created: 640 480
+[16:30:26] INFO HIGH: WWSiGE Started
+[16:30:30] INFO HIGH: WWSiGE Closed
+[16:31:19] INFO HIGH: WWSiGE Loading
+[16:31:19] INFO HIGH: New window created: 640 480
+[16:31:20] INFO MEDIUM: Loading Map `map.lua`
+[16:31:20] INFO HIGH: WWSiGE Started
+[16:31:31] INFO HIGH: WWSiGE Closed
+[16:32:12] INFO HIGH: WWSiGE Loading
+[16:32:12] INFO HIGH: New window created: 640 480
+[16:32:12] INFO MEDIUM: Loading Map `map.lua`
+[16:32:12] INFO HIGH: WWSiGE Started
+[16:32:17] INFO HIGH: WWSiGE Closed
+[16:34:28] INFO HIGH: WWSiGE Loading
+[16:34:29] INFO HIGH: New window created: 640 480
+[16:34:29] INFO MEDIUM: Loading Map `map.lua`
+[16:34:29] INFO HIGH: WWSiGE Started
+[16:38:34] INFO HIGH: WWSiGE Loading
+[16:38:34] INFO HIGH: New window created: 640 480
+[16:38:34] INFO MEDIUM: Loading Map `map.lua`
+[16:38:34] INFO HIGH: WWSiGE Started
+[16:38:37] INFO HIGH: WWSiGE Closed
+[16:40:59] INFO HIGH: WWSiGE Loading
+[16:40:59] INFO HIGH: New window created: 640 480
+[16:40:59] INFO MEDIUM: Loading Map `map.lua`
+[16:40:59] INFO HIGH: WWSiGE Started
+[16:41:04] INFO HIGH: WWSiGE Closed
+[16:41:23] INFO HIGH: WWSiGE Loading
+[16:41:24] INFO HIGH: New window created: 640 480
+[16:41:24] INFO MEDIUM: Loading Map `map.lua`
+[16:41:24] INFO HIGH: WWSiGE Started
+[16:41:27] INFO HIGH: WWSiGE Closed
+[16:43:04] INFO HIGH: WWSiGE Loading
+[16:43:05] INFO HIGH: New window created: 640 480
+[16:43:05] INFO MEDIUM: Loading Map `map.lua`
+[16:43:05] INFO HIGH: WWSiGE Started
+[16:43:51] INFO HIGH: WWSiGE Loading
+[16:43:51] INFO HIGH: New window created: 640 480
+[16:43:51] INFO MEDIUM: Loading Map `map.lua`
+[16:43:51] INFO HIGH: WWSiGE Started
+[16:45:29] INFO HIGH: WWSiGE Loading
+[16:45:29] INFO HIGH: New window created: 640 480
+[16:45:29] INFO MEDIUM: Loading Map `map.lua`
+[16:45:29] INFO HIGH: WWSiGE Started
+[16:46:16] INFO HIGH: WWSiGE Loading
+[16:46:16] INFO HIGH: New window created: 640 480
+[16:46:17] INFO MEDIUM: Loading Map `map.lua`
+[16:46:17] INFO HIGH: WWSiGE Started
+[16:46:43] INFO HIGH: WWSiGE Loading
+[16:46:43] INFO HIGH: New window created: 640 480
+[16:46:43] INFO MEDIUM: Loading Map `map.lua`
+[16:46:43] INFO HIGH: WWSiGE Started
+[16:46:51] INFO HIGH: WWSiGE Closed
+[16:46:57] INFO HIGH: WWSiGE Loading
+[16:46:58] INFO HIGH: New window created: 640 480
+[16:46:58] INFO MEDIUM: Loading Map `map.lua`
+[16:46:58] INFO HIGH: WWSiGE Started
+[16:49:40] INFO HIGH: WWSiGE Loading
+[16:49:41] INFO HIGH: New window created: 640 480
+[16:49:41] INFO MEDIUM: Loading Map `map.lua`
+[16:49:41] INFO HIGH: WWSiGE Started
+[16:49:59] INFO HIGH: WWSiGE Loading
+[16:49:59] INFO HIGH: New window created: 640 480
+[16:50:00] INFO MEDIUM: Loading Map `map.lua`
+[16:50:00] INFO HIGH: WWSiGE Started
+[16:50:04] INFO HIGH: WWSiGE Closed
+[16:55:58] INFO HIGH: WWSiGE Loading
+[16:55:58] INFO HIGH: New window created: 640 480
+[16:55:58] INFO MEDIUM: Loading Map `map.lua`
+[16:55:58] INFO HIGH: WWSiGE Started
+[16:56:05] INFO HIGH: WWSiGE Closed
+[16:56:39] INFO HIGH: WWSiGE Loading
+[16:56:39] INFO HIGH: New window created: 640 480
+[16:56:39] INFO MEDIUM: Loading Map `map.lua`
+[16:56:39] INFO HIGH: WWSiGE Started
+[16:56:43] INFO HIGH: WWSiGE Closed
+[17:00:21] INFO HIGH: WWSiGE Loading
+[17:00:22] INFO HIGH: New window created: 640 480
+[17:00:22] INFO MEDIUM: Loading Map `map.lua`
+[17:00:22] INFO HIGH: WWSiGE Started
+[17:00:25] INFO HIGH: WWSiGE Closed
+[17:01:02] INFO HIGH: WWSiGE Loading
+[17:01:02] INFO HIGH: New window created: 640 480
+[17:01:02] INFO MEDIUM: Loading Map `map.lua`
+[17:01:02] INFO HIGH: WWSiGE Started
+[17:02:07] INFO HIGH: WWSiGE Loading
+[17:02:08] INFO HIGH: New window created: 640 480
+[17:02:08] INFO MEDIUM: Loading Map `map.lua`
+[17:02:08] INFO HIGH: WWSiGE Started
+[17:15:18] INFO HIGH: WWSiGE Loading
+[17:15:18] INFO HIGH: New window created: 640 480
+[17:15:18] INFO MEDIUM: Loading Map `map.lua`
+[17:15:18] INFO HIGH: WWSiGE Started
+[17:15:52] INFO HIGH: WWSiGE Loading
+[17:15:52] INFO HIGH: New window created: 640 480
+[17:15:52] INFO MEDIUM: Loading Map `data/maps/map.lua`
+[17:15:52] INFO HIGH: WWSiGE Started
+[17:38:28] INFO HIGH: WWSiGE Loading
+[17:38:28] INFO HIGH: New window created: 640 480
+[17:38:28] INFO MEDIUM: Loading Map `data/maps/map.lua`
+[17:38:28] INFO HIGH: WWSiGE Started
+[17:39:25] INFO HIGH: WWSiGE Loading
+[17:39:25] INFO HIGH: New window created: 640 480
+[17:39:25] INFO MEDIUM: Loading Map `map.lua`
+[17:39:25] INFO HIGH: WWSiGE Started
+[17:39:50] INFO HIGH: WWSiGE Loading
+[17:39:50] INFO HIGH: New window created: 640 480
+[17:39:50] INFO MEDIUM: Loading Map `map.lua`
+[17:39:50] INFO HIGH: WWSiGE Started
+[17:40:03] INFO HIGH: WWSiGE Loading
+[17:40:03] INFO HIGH: New window created: 640 480
+[17:40:03] INFO MEDIUM: Loading Map `map.lua`
+[17:40:03] INFO HIGH: WWSiGE Started
+[17:40:22] INFO HIGH: WWSiGE Loading
+[17:40:22] INFO HIGH: New window created: 640 480
+[17:40:22] INFO MEDIUM: Loading Map `map.lua`
+[17:40:47] INFO HIGH: WWSiGE Loading
+[17:40:47] INFO HIGH: New window created: 640 480
+[17:40:47] INFO MEDIUM: Loading Map `map.lua`
+[17:40:54] INFO HIGH: WWSiGE Loading
+[17:40:54] INFO HIGH: New window created: 640 480
+[17:40:54] INFO MEDIUM: Loading Map `map.lua`
+[17:41:07] INFO HIGH: WWSiGE Loading
+[17:41:07] INFO HIGH: New window created: 640 480
+[17:41:07] INFO MEDIUM: Loading Map `map.lua`
+[17:41:31] INFO HIGH: WWSiGE Loading
+[17:41:31] INFO HIGH: New window created: 640 480
+[17:41:32] INFO MEDIUM: Loading Map `map.lua`
+[17:43:10] INFO HIGH: WWSiGE Loading
+[17:43:11] INFO HIGH: New window created: 640 480
+[17:43:11] INFO MEDIUM: Loading Map `map.lua`
+[17:43:20] INFO HIGH: WWSiGE Loading
+[17:43:20] INFO HIGH: New window created: 640 480
+[17:43:20] INFO MEDIUM: Loading Map `map.lua`
+[17:43:29] INFO HIGH: WWSiGE Loading
+[17:43:29] INFO HIGH: New window created: 640 480
+[17:43:30] INFO MEDIUM: Loading Map `map.lua`
+[17:43:30] INFO HIGH: WWSiGE Started
+[17:43:32] INFO HIGH: WWSiGE Closed
+[17:46:11] INFO HIGH: WWSiGE Loading
+[17:46:11] INFO HIGH: New window created: 640 480
+[17:46:11] INFO MEDIUM: Loading Map `map.lua`
+[17:46:11] INFO HIGH: WWSiGE Started
+[17:46:17] INFO HIGH: WWSiGE Closed
+[17:46:32] INFO HIGH: WWSiGE Loading
+[17:46:33] INFO HIGH: New window created: 640 480
+[17:46:33] INFO MEDIUM: Loading Map `map.lua`
+[17:46:33] INFO HIGH: WWSiGE Started
+[17:47:16] INFO HIGH: WWSiGE Loading
+[17:47:17] INFO HIGH: New window created: 640 480
+[17:47:17] INFO MEDIUM: Loading Map `map.lua`
+[17:49:07] INFO HIGH: WWSiGE Loading
+[17:49:07] INFO HIGH: New window created: 640 480
+[17:49:07] INFO MEDIUM: Loading Map `map.lua`
+[17:49:15] INFO HIGH: WWSiGE Loading
+[17:49:15] INFO HIGH: New window created: 640 480
+[17:49:15] INFO MEDIUM: Loading Map `map.lua`
+[17:50:40] INFO HIGH: WWSiGE Loading
+[17:50:40] INFO HIGH: New window created: 640 480
+[17:50:41] INFO MEDIUM: Loading Map `map.lua`
+[17:51:02] INFO HIGH: WWSiGE Loading
+[17:51:03] INFO HIGH: New window created: 640 480
+[17:51:03] INFO MEDIUM: Loading Map `map.lua`
+[17:52:39] INFO HIGH: WWSiGE Loading
+[17:52:39] INFO HIGH: New window created: 640 480
+[17:52:39] INFO MEDIUM: Loading Map `map.lua`
+[17:52:39] INFO HIGH: WWSiGE Started
+[17:53:18] INFO HIGH: WWSiGE Loading
+[17:53:18] INFO HIGH: New window created: 640 480
+[17:53:19] INFO MEDIUM: Loading Map `map.lua`
+[17:53:19] INFO HIGH: WWSiGE Started
+[17:53:41] INFO HIGH: WWSiGE Loading
+[17:53:41] INFO HIGH: New window created: 640 480
+[17:53:41] INFO MEDIUM: Loading Map `map.lua`
+[17:53:41] INFO HIGH: WWSiGE Started
+[17:54:13] INFO HIGH: WWSiGE Loading
+[17:54:13] INFO HIGH: New window created: 640 480
+[17:54:13] INFO MEDIUM: Loading Map `map.lua`
+[17:54:13] INFO HIGH: WWSiGE Started
+[17:54:43] INFO HIGH: WWSiGE Loading
+[17:54:43] INFO HIGH: New window created: 640 480
+[17:54:43] INFO MEDIUM: Loading Map `map.lua`
+[17:54:43] INFO HIGH: WWSiGE Started
+[17:55:10] INFO HIGH: WWSiGE Loading
+[17:55:10] INFO HIGH: New window created: 640 480
+[17:55:11] INFO MEDIUM: Loading Map `map.lua`
+[17:55:11] INFO HIGH: WWSiGE Started
+[17:55:23] INFO HIGH: WWSiGE Loading
+[17:55:23] INFO HIGH: New window created: 640 480
+[17:55:24] INFO MEDIUM: Loading Map `map.lua`
+[17:55:24] INFO HIGH: WWSiGE Started
+[17:55:32] INFO HIGH: WWSiGE Loading
+[17:55:32] INFO HIGH: New window created: 640 480
+[17:55:32] INFO MEDIUM: Loading Map `map.lua`
+[17:55:32] INFO HIGH: WWSiGE Started
+[17:55:55] INFO HIGH: WWSiGE Loading
+[17:55:56] INFO HIGH: New window created: 640 480
+[17:55:56] INFO MEDIUM: Loading Map `map.lua`
+[17:55:56] INFO HIGH: WWSiGE Started
+[17:56:51] INFO HIGH: WWSiGE Loading
+[17:56:51] INFO HIGH: New window created: 640 480
+[17:56:51] INFO MEDIUM: Loading Map `map.lua`
+[17:56:51] INFO HIGH: WWSiGE Started
+[17:57:34] INFO HIGH: WWSiGE Loading
+[17:57:34] INFO HIGH: New window created: 640 480
+[17:57:34] INFO MEDIUM: Loading Map `map.lua`
+[17:57:34] INFO HIGH: WWSiGE Started
+[18:03:09] INFO HIGH: WWSiGE Loading
+[18:03:09] INFO HIGH: New window created: 640 480
+[18:03:09] INFO MEDIUM: Loading Map `map.lua`
+[18:03:09] INFO HIGH: WWSiGE Started
+[18:03:41] INFO HIGH: WWSiGE Loading
+[18:03:41] INFO HIGH: New window created: 640 480
+[18:03:41] INFO MEDIUM: Loading Map `map.lua`
+[18:04:30] INFO HIGH: WWSiGE Loading
+[18:04:31] INFO HIGH: New window created: 640 480
+[18:04:31] INFO MEDIUM: Loading Map `map.lua`
+[18:05:12] INFO HIGH: WWSiGE Loading
+[18:05:12] INFO HIGH: New window created: 640 480
+[18:05:12] INFO MEDIUM: Loading Map `map.lua`
+[18:05:12] INFO HIGH: WWSiGE Started
+[18:05:17] INFO HIGH: WWSiGE Closed
+[18:06:11] INFO HIGH: WWSiGE Loading
+[18:06:11] INFO HIGH: New window created: 640 480
+[18:06:11] INFO MEDIUM: Loading Map `map.lua`
+[18:06:11] INFO HIGH: WWSiGE Started
+[18:06:13] INFO HIGH: WWSiGE Closed
+[18:06:24] INFO HIGH: WWSiGE Loading
+[18:06:24] INFO HIGH: New window created: 640 480
+[18:06:24] INFO MEDIUM: Loading Map `map.lua`
+[18:06:24] INFO HIGH: WWSiGE Started
+[18:06:30] INFO HIGH: WWSiGE Closed
+[18:08:54] INFO HIGH: WWSiGE Loading
+[18:08:55] INFO HIGH: New window created: 640 480
+[18:08:55] INFO MEDIUM: Loading Map `map.lua`
+[18:08:55] INFO HIGH: WWSiGE Started
+[18:32:35] INFO HIGH: WWSiGE Loading
+[18:32:35] INFO HIGH: New window created: 640 480
+[18:32:35] INFO MEDIUM: Loading Map `data/maps/test.map.lua`
+[18:32:49] INFO HIGH: WWSiGE Loading
+[18:32:49] INFO HIGH: New window created: 640 480
+[18:32:49] INFO MEDIUM: Loading Map `map.lua`
+[18:32:49] INFO HIGH: WWSiGE Started
+[18:33:25] INFO HIGH: WWSiGE Loading
+[18:33:25] INFO HIGH: New window created: 640 480
+[18:33:25] INFO MEDIUM: Loading Map `map.lua`
+[18:33:25] WARNING: cannot execute map.lua
+[18:33:25] INFO HIGH: WWSiGE Started
+[18:33:41] INFO HIGH: WWSiGE Loading
+[18:33:42] INFO HIGH: New window created: 640 480
+[18:33:42] INFO MEDIUM: Loading Map `map.lua`
+[18:33:42] INFO HIGH: WWSiGE Started
+[18:34:14] INFO HIGH: WWSiGE Loading
+[18:34:14] INFO HIGH: New window created: 640 480
+[18:34:14] INFO MEDIUM: Loading Map `map.lua`
+[18:34:14] INFO HIGH: WWSiGE Started
+[18:34:52] INFO HIGH: WWSiGE Loading
+[18:34:53] INFO HIGH: New window created: 640 480
+[18:34:53] INFO MEDIUM: Loading Map `map.lua`
+[18:34:53] INFO HIGH: WWSiGE Started
+[18:35:07] INFO HIGH: WWSiGE Loading
+[18:35:07] INFO HIGH: New window created: 640 480
+[18:35:07] INFO MEDIUM: Loading Map `map.lua`
+[18:35:07] INFO HIGH: WWSiGE Started
+[18:38:47] INFO HIGH: WWSiGE Loading
+[18:38:47] INFO HIGH: New window created: 640 480
+[18:38:47] INFO MEDIUM: Loading Map `map.lua`
+[18:38:47] INFO HIGH: WWSiGE Started
+[18:39:07] INFO HIGH: WWSiGE Loading
+[18:39:08] INFO HIGH: New window created: 640 480
+[18:39:08] INFO MEDIUM: Loading Map `map.lua`
+[18:39:08] INFO HIGH: WWSiGE Started
+[18:39:39] INFO HIGH: WWSiGE Loading
+[18:39:39] INFO HIGH: New window created: 640 480
+[18:39:39] INFO MEDIUM: Loading Map `map.lua`
+[18:39:39] INFO HIGH: WWSiGE Started
+[18:39:46] INFO HIGH: WWSiGE Closed
+[18:40:08] INFO HIGH: WWSiGE Loading
+[18:40:09] INFO HIGH: New window created: 640 480
+[18:40:09] INFO MEDIUM: Loading Map `map.lua`
+[18:40:09] INFO HIGH: WWSiGE Started
+[18:50:30] INFO HIGH: WWSiGE Loading
+[18:50:31] INFO HIGH: New window created: 640 480
+[18:50:31] INFO MEDIUM: Loading Map `map.lua`
+[18:50:31] INFO HIGH: WWSiGE Started
+[18:51:19] INFO HIGH: WWSiGE Closed
+[18:51:54] INFO HIGH: WWSiGE Loading
+[18:51:54] INFO HIGH: New window created: 640 480
+[18:51:54] INFO MEDIUM: Loading Map `map.lua`
+[18:53:55] INFO HIGH: WWSiGE Loading
+[18:53:56] INFO HIGH: New window created: 640 480
+[18:53:56] INFO MEDIUM: Loading Map `map.lua`
+[18:53:56] INFO HIGH: WWSiGE Started
+[18:59:45] INFO HIGH: WWSiGE Loading
+[18:59:45] INFO HIGH: New window created: 640 480
+[18:59:45] INFO MEDIUM: Loading Map `map.lua`
+[19:00:59] INFO HIGH: WWSiGE Loading
+[19:01:00] INFO HIGH: New window created: 640 480
+[19:01:00] INFO MEDIUM: Loading Map `map.lua`
+[19:01:30] INFO HIGH: WWSiGE Loading
+[19:01:30] INFO HIGH: New window created: 640 480
+[19:01:31] INFO MEDIUM: Loading Map `map.lua`
+[19:02:03] INFO HIGH: WWSiGE Loading
+[19:02:04] INFO HIGH: New window created: 640 480
+[19:02:04] INFO MEDIUM: Loading Map `map.lua`
+[19:02:09] INFO HIGH: WWSiGE Loading
+[19:02:10] INFO HIGH: New window created: 640 480
+[19:02:10] INFO MEDIUM: Loading Map `map.lua`
+[19:04:24] INFO HIGH: WWSiGE Loading
+[19:04:24] INFO HIGH: New window created: 640 480
+[19:04:25] INFO MEDIUM: Loading Map `map.lua`
+[19:04:25] WARNING: cannot execute 
+[19:04:25] WARNING: cannot execute 
+[19:04:25] INFO HIGH: WWSiGE Started
+[19:04:55] INFO HIGH: WWSiGE Loading
+[19:04:56] INFO HIGH: New window created: 640 480
+[19:04:56] INFO MEDIUM: Loading Map `map.lua`
+[19:04:56] WARNING: cannot execute ``
+[19:04:56] WARNING: cannot execute ``
+[19:04:56] INFO HIGH: WWSiGE Started
+[19:05:34] INFO HIGH: WWSiGE Loading
+[19:05:34] INFO HIGH: New window created: 640 480
+[19:05:34] INFO MEDIUM: Loading Map `map.lua`
+[19:05:34] WARNING: cannot execute `data/script/object.lua`
+[19:05:34] WARNING: cannot execute ``
+[19:05:34] INFO HIGH: WWSiGE Started
+[19:05:59] INFO HIGH: WWSiGE Loading
+[19:05:59] INFO HIGH: New window created: 640 480
+[19:05:59] INFO MEDIUM: Loading Map `map.lua`
+[19:05:59] WARNING: cannot execute ``
+[19:05:59] INFO HIGH: WWSiGE Started
+[19:06:06] INFO HIGH: WWSiGE Closed
+[19:07:26] INFO HIGH: WWSiGE Loading
+[19:07:26] INFO HIGH: New window created: 640 480
+[19:07:26] INFO MEDIUM: Loading Map `map.lua`
+[19:07:26] INFO HIGH: WWSiGE Started
+[19:07:30] INFO HIGH: WWSiGE Closed
+[19:12:14] INFO HIGH: WWSiGE Loading
+[19:12:14] INFO HIGH: New window created: 640 480
+[19:12:15] INFO MEDIUM: Loading Map `map.lua`
+[19:12:15] INFO HIGH: WWSiGE Started
+[19:12:20] INFO HIGH: WWSiGE Closed
+[19:12:43] INFO HIGH: WWSiGE Loading
+[19:12:44] INFO HIGH: New window created: 640 480
+[19:12:44] INFO MEDIUM: Loading Map `map.lua`
+[19:12:44] INFO HIGH: WWSiGE Started
+[19:12:45] INFO HIGH: WWSiGE Closed
+[19:14:52] INFO HIGH: WWSiGE Loading
+[19:14:53] INFO HIGH: New window created: 640 480
+[19:14:53] INFO MEDIUM: Loading Map `map.lua`
+[19:15:00] INFO HIGH: WWSiGE Loading
+[19:15:00] INFO HIGH: New window created: 640 480
+[19:15:00] INFO MEDIUM: Loading Map `map.lua`
+[19:17:29] INFO HIGH: WWSiGE Loading
+[19:17:29] INFO HIGH: New window created: 640 480
+[19:17:29] INFO MEDIUM: Loading Map `map.lua`
+[19:17:46] INFO HIGH: WWSiGE Loading
+[19:17:46] INFO HIGH: New window created: 640 480
+[19:17:46] INFO MEDIUM: Loading Map `map.lua`
+[19:17:57] INFO HIGH: WWSiGE Loading
+[19:17:57] INFO HIGH: New window created: 640 480
+[19:17:57] INFO MEDIUM: Loading Map `map.lua`
+[19:18:45] INFO HIGH: WWSiGE Loading
+[19:18:45] INFO HIGH: New window created: 640 480
+[19:18:45] INFO MEDIUM: Loading Map `map.lua`
+[19:18:53] INFO HIGH: WWSiGE Loading
+[19:18:53] INFO HIGH: New window created: 640 480
+[19:18:53] INFO MEDIUM: Loading Map `map.lua`
+[19:18:53] INFO HIGH: WWSiGE Started
+[19:18:58] INFO HIGH: WWSiGE Closed
+[19:19:21] INFO HIGH: WWSiGE Loading
+[19:19:22] INFO HIGH: New window created: 640 480
+[19:19:22] INFO MEDIUM: Loading Map `map.lua`
+[19:19:22] INFO HIGH: WWSiGE Started
+[19:19:25] INFO HIGH: WWSiGE Closed
+[19:19:36] INFO HIGH: WWSiGE Loading
+[19:19:37] INFO HIGH: New window created: 640 480
+[19:19:37] INFO MEDIUM: Loading Map `map.lua`
+[19:19:37] INFO HIGH: WWSiGE Started
+[19:19:40] INFO HIGH: WWSiGE Closed
+[19:19:55] INFO HIGH: WWSiGE Loading
+[19:19:55] INFO HIGH: New window created: 640 480
+[19:19:55] INFO MEDIUM: Loading Map `map.lua`
+[19:19:55] INFO HIGH: WWSiGE Started
+[19:20:00] INFO HIGH: WWSiGE Closed
